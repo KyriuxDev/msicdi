@@ -340,12 +340,15 @@
 							<font color="red" size="3px">Cambiar Estado A:</font>
 							<select id="selectStatus" name="selectStatus" style="width:90%">
 							<option value="0">Seleccione un estado...</option>
-							<?php foreach ($stat as $st) {
-								if( $dat[0]['status'] == $st['Status'] )
-									echo '<option selected value="'.$st['Status'].'">'.$st['Status'].'</option>';
-								else
-									echo '<option value="'.$st['Status'].'">'.$st['Status'].'</option>';
-							} ?>
+							<?php foreach ($stat as $st):
+								$selected  = ($dat[0]['status'] === $st['Status']) ? 'selected' : '';
+								$esResuelto = (stripos($st['Status'], 'resuelto') !== false);
+								$disabled   = ($esResuelto && !$yaEnviado) ? 'disabled' : '';
+								$label      = ($esResuelto && !$yaEnviado)
+												? $st['Status'] . ' (requiere Helix)'
+												: $st['Status'];
+								echo "<option value=\"{$st['Status']}\" {$selected} {$disabled}>{$label}</option>";
+							endforeach; ?>
 							</select>
 						</td>
 					</tr>
@@ -380,8 +383,17 @@
 			<a class="btn btn-warning" style="margin-top:6px; margin-right:2px;" href="<?php echo '/msicdi/report/reporte?idTicket='.$codigo; ?>" target="_blank">Generar Reporte</a>
 			<button class="btn btn-primary" type="submit">Actualizar</button>
 			<?php if($isAdmin || $iscoAdmin): ?>
+				<?php
+					$sinAsignar = (empty($dat[0]['soporte']) || $dat[0]['soporte'] === 'Sin Asignar');
+				?>
 				<?php if ($yaEnviado): ?>
-					<button class="btn btn-success" type="button" disabled>✓ Enviado a Helix</button>
+					<button class="btn btn-success" type="button" disabled>Enviado a Helix</button>
+				<?php elseif ($sinAsignar): ?>
+					<button class="btn btn-default" type="button" disabled
+							title="Asigne un encargado antes de registrar en Helix"
+							style="cursor:not-allowed;">
+						Helix
+					</button>
 				<?php else: ?>
 					<button class="btn" style="background-color:#2e7d32; color:#fff;" type="button" onclick="abrirHelixWO();">Helix</button>
 				<?php endif; ?>
