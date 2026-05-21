@@ -64,7 +64,7 @@
                   'visible' => !Yii::app()->user->isGuest,
                 ),
                 //Avisos de Bienes se queda público
-                array('label'=>'Avisos Bienes', 'url'=>'http://11.1.21.171/bienes','linkOptions' => array('target'=>'_blank')),
+                // array('label'=>'Avisos Bienes', 'url'=>'http://11.1.21.171/bienes','linkOptions' => array('target'=>'_blank')),
 				
                 array('label'=>'Monitores', //en sesión
                   'items'=>array( 
@@ -78,7 +78,7 @@
                 //hasta acá se modificó para meter los monitores y lo de bienes
 
 		//modificando para poner las incidicencias de CDI
-		array('label'=>'Incidencias CDI','url'=>'http://11.1.21.5/msicdi/incidenciascdi','linkOptions' => array('target'=>'_blank'), 'visible'=>!Yii::app()->user->isGuest),
+		// array('label'=>'Incidencias CDI','url'=>'http://11.1.21.5/msicdi/incidenciascdi','linkOptions' => array('target'=>'_blank'), 'visible'=>!Yii::app()->user->isGuest),
 		//termina área del botón para incidencias cdi
 
                 array('label'=>'Administrar',
@@ -89,7 +89,7 @@
                 array('label'=>'CCT 2013-2015', 'url'=>array('#'),'visible' => false),
 				array('label'=>'MAAGTIC-SI', 'url'=>array('#'),'visible' => false),
 				array('label'=>'Acerca de', 'url'=>array('/site/acerca')),
-				array('label'=>'Desarrollador', 'items'=>array(array('label'=>'Consultar API','url'=>'/msicdi/api'),), 'visible'=>!Yii::app()->user->isGuest),
+				// array('label'=>'Desarrollador', 'items'=>array(array('label'=>'Consultar API','url'=>'/msicdi/api'),), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Entrar', 'url'=>array('/inicio/acceso'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Salir ('.Yii::app()->user->nombreCorto.')', 'url'=>array('/inicio/salir'), 'visible'=>!Yii::app()->user->isGuest,'htmlOptions' => array('id' => 'lolen','onclick' => 'onOverMenu();'))
             ), 
