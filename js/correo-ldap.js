@@ -48,7 +48,8 @@ function toggleSinCorreo(cb) {
    - Si ya hay correo completo (tiene '@' con algo después) verifica LDAP.
    - Si se está borrando y el valor llega al '@' no hace nada (fix del bug). */
 function correoMostrarHint() {
-    var val = $.trim($('#ncorr').val());
+    var val = $.trim($('#ncorr').val().toLowerCase());
+    $('#ncorr').val(val);
     var $fb = $('#ncorr_ldap_feedback');
 
     clearTimeout(ncorrLdapTimer);
@@ -90,7 +91,8 @@ function correoMostrarHint() {
    - Si termina en '@' agrega el dominio y verifica.
    - Si ya tiene correo completo verifica directamente. */
 function correoCompletarYValidar() {
-    var val = $.trim($('#ncorr').val());
+    var val = $.trim($('#ncorr').val().toLowerCase());
+    $('#ncorr').val(val);
 
     $('#ncorr_hint').hide().html('');
 
