@@ -1,0 +1,203 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button button" {$pdflink_attrs}>Vista PDF</a>
+{END pdflink_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfoprint {$brickclass_masterinfoprint}">{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel respuestas print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN serie_pc_fieldheadercolumn}
+<th class="runner-cc {$serie_pc_class}" {$serie_pc_style}>
+	{BEGIN serie_pc_fieldheader}
+	<b>{$label respuestas serie_pc}</b>
+	{END serie_pc_fieldheader}
+</th>
+{END serie_pc_fieldheadercolumn}
+	{BEGIN id_criterio_fieldheadercolumn}
+<th class="runner-cc {$id_criterio_class}" {$id_criterio_style}>
+	{BEGIN id_criterio_fieldheader}
+	<b>{$label respuestas id_criterio}</b>
+	{END id_criterio_fieldheader}
+</th>
+{END id_criterio_fieldheadercolumn}
+	{BEGIN fecha_fieldheadercolumn}
+<th class="runner-cc {$fecha_class}" {$fecha_style}>
+	{BEGIN fecha_fieldheader}
+	<b>{$label respuestas fecha}</b>
+	{END fecha_fieldheader}
+</th>
+{END fecha_fieldheadercolumn}
+	{BEGIN cumplimiento_fieldheadercolumn}
+<th class="runner-cc {$cumplimiento_class}" {$cumplimiento_style}>
+	{BEGIN cumplimiento_fieldheader}
+	<b>{$label respuestas cumplimiento}</b>
+	{END cumplimiento_fieldheader}
+</th>
+{END cumplimiento_fieldheadercolumn}
+	{BEGIN recomendacion_fieldheadercolumn}
+<th class="runner-cc {$recomendacion_class}" {$recomendacion_style}>
+	{BEGIN recomendacion_fieldheader}
+	<b>{$label respuestas recomendacion}</b>
+	{END recomendacion_fieldheader}
+</th>
+{END recomendacion_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN serie_pc_fieldcolumn}
+<td  class="runner-cc {$serie_pc_class}" {$serie_pc_style} {$recordattrs}>
+	{$serie_pc_value}
+</td>
+{END serie_pc_fieldcolumn}
+	{BEGIN id_criterio_fieldcolumn}
+<td  class="runner-cc {$id_criterio_class}" {$id_criterio_style} {$recordattrs}>
+	{$id_criterio_value}
+</td>
+{END id_criterio_fieldcolumn}
+	{BEGIN fecha_fieldcolumn}
+<td  class="runner-cc {$fecha_class}" {$fecha_style} {$recordattrs}>
+	{$fecha_value}
+</td>
+{END fecha_fieldcolumn}
+	{BEGIN cumplimiento_fieldcolumn}
+<td  class="runner-cc {$cumplimiento_class}" {$cumplimiento_style} {$recordattrs}>
+	{$cumplimiento_value}
+</td>
+{END cumplimiento_fieldcolumn}
+	{BEGIN recomendacion_fieldcolumn}
+<td  class="runner-cc {$recomendacion_class}" {$recomendacion_style} {$recordattrs}>
+	{$recomendacion_value}
+</td>
+{END recomendacion_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

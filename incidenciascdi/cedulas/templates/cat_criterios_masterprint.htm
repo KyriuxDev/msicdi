@@ -1,0 +1,54 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}">	<h1>{$pagetitlelabel cat_criterios masterprint}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-masterprintfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$id_criterio_class}">{$label cat_criterios id_criterio}</th>
+			<th class="{$criterio_class}">{$label cat_criterios criterio}</th>
+			<th class="{$asiact_class}">{$label cat_criterios asiact}</th>
+			<th class="{$inciso_class}">{$label cat_criterios inciso}</th>
+			<th class="{$texto_class}">{$label cat_criterios texto}</th>
+			<th class="{$actividad_class}">{$label cat_criterios actividad}</th>
+			<th class="{$grupo_class}">{$label cat_criterios grupo}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$id_criterio_class}">{$id_criterio_mastervalue}</td>
+			<td class="{$criterio_class}">{$criterio_mastervalue}</td>
+			<td class="{$asiact_class}">{$asiact_mastervalue}</td>
+			<td class="{$inciso_class}">{$inciso_mastervalue}</td>
+			<td class="{$texto_class}">{$texto_mastervalue}</td>
+			<td class="{$actividad_class}">{$actividad_mastervalue}</td>
+			<td class="{$grupo_class}">{$grupo_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+
+{END container_mastergrid}
+
+</div>

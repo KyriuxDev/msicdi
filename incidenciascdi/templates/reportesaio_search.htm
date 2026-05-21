@@ -1,0 +1,281 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel reportesaio search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criterio:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas las condiciones</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Ninguna condición</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NO</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_marca}">
+	{BEGIN marca_fieldblock}		
+	<td>
+		{$label reportesaio marca}
+	</td>
+	<td>
+		<input type="checkbox" {$marca_notbox}>
+	</td>
+	<td>
+		{$searchtype_marca}
+	</td>
+	<td>
+		{$marca_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$marca_editcontrol1}&nbsp;
+	</td>
+{END marca_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_serie}">
+	{BEGIN serie_fieldblock}		
+	<td>
+		{$label reportesaio serie}
+	</td>
+	<td>
+		<input type="checkbox" {$serie_notbox}>
+	</td>
+	<td>
+		{$searchtype_serie}
+	</td>
+	<td>
+		{$serie_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$serie_editcontrol1}&nbsp;
+	</td>
+{END serie_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_unidad}">
+	{BEGIN unidad_fieldblock}		
+	<td>
+		{$label reportesaio unidad}
+	</td>
+	<td>
+		<input type="checkbox" {$unidad_notbox}>
+	</td>
+	<td>
+		{$searchtype_unidad}
+	</td>
+	<td>
+		{$unidad_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$unidad_editcontrol1}&nbsp;
+	</td>
+{END unidad_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_area}">
+	{BEGIN area_fieldblock}		
+	<td>
+		{$label reportesaio area}
+	</td>
+	<td>
+		<input type="checkbox" {$area_notbox}>
+	</td>
+	<td>
+		{$searchtype_area}
+	</td>
+	<td>
+		{$area_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$area_editcontrol1}&nbsp;
+	</td>
+{END area_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_falla}">
+	{BEGIN falla_fieldblock}		
+	<td>
+		{$label reportesaio falla}
+	</td>
+	<td>
+		<input type="checkbox" {$falla_notbox}>
+	</td>
+	<td>
+		{$searchtype_falla}
+	</td>
+	<td>
+		{$falla_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$falla_editcontrol1}&nbsp;
+	</td>
+{END falla_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fecha}">
+	{BEGIN fecha_fieldblock}		
+	<td>
+		{$label reportesaio fecha}
+	</td>
+	<td>
+		<input type="checkbox" {$fecha_notbox}>
+	</td>
+	<td>
+		{$searchtype_fecha}
+	</td>
+	<td>
+		{$fecha_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fecha_editcontrol1}&nbsp;
+	</td>
+{END fecha_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_usuario}">
+	{BEGIN usuario_fieldblock}		
+	<td>
+		{$label reportesaio usuario}
+	</td>
+	<td>
+		<input type="checkbox" {$usuario_notbox}>
+	</td>
+	<td>
+		{$searchtype_usuario}
+	</td>
+	<td>
+		{$usuario_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$usuario_editcontrol1}&nbsp;
+	</td>
+{END usuario_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_ip}">
+	{BEGIN ip_fieldblock}		
+	<td>
+		{$label reportesaio ip}
+	</td>
+	<td>
+		<input type="checkbox" {$ip_notbox}>
+	</td>
+	<td>
+		{$searchtype_ip}
+	</td>
+	<td>
+		{$ip_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$ip_editcontrol1}&nbsp;
+	</td>
+{END ip_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_cuenta}">
+	{BEGIN cuenta_fieldblock}		
+	<td>
+		{$label reportesaio cuenta}
+	</td>
+	<td>
+		<input type="checkbox" {$cuenta_notbox}>
+	</td>
+	<td>
+		{$searchtype_cuenta}
+	</td>
+	<td>
+		{$cuenta_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$cuenta_editcontrol1}&nbsp;
+	</td>
+{END cuenta_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_evidencia}">
+	{BEGIN evidencia_fieldblock}		
+	<td>
+		{$label reportesaio evidencia}
+	</td>
+	<td>
+		<input type="checkbox" {$evidencia_notbox}>
+	</td>
+	<td>
+		{$searchtype_evidencia}
+	</td>
+	<td>
+		{$evidencia_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$evidencia_editcontrol1}&nbsp;
+	</td>
+{END evidencia_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

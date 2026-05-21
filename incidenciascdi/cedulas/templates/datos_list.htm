@@ -1,0 +1,689 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">{$showmasterfile}
+<a class="runner-link" {$backtomasterlink_attrs}>
+	<b>Volver a {$backtomasterlink_caption}</b>
+</a></div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN searchform_block}
+<div  class="style1 rnr-bl rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}	
+		<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}
+<div  class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}
+<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>
+{END searchsaving_block}
+
+<div class="rnr-hfiller"></div>
+
+<div  class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}">{BEGIN print_friendly}
+<div class="rnr-printpanelblock" id="printpanelblock{$id}">
+<div class="rnr-printtab">
+<a data-icon="printdown" class="rnr-printicon" id="print_friendly_togger{$id}" title="Página para imprimir"></a>
+</div>
+<div class="rnr-printpanel" >
+<table class="rnr-printscope" id="print_friendly_scope{$id}">
+	<tr>
+		<td class="rnr-printScopeCell">Scope:</td>
+		{BEGIN print_friendly_all}
+		<td class="rnr-printScopeCell"><input type="radio" id="printAll{$id}" data-href="datos_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">&nbsp;<label for="printAll{$id}">Print all pages</label></td>
+		{END print_friendly_all}
+
+	</tr>
+	<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printPage{$id}" data-href="datos_print.php?{$crosstable_attrs}" name="printScope" checked>&nbsp;<label for="printPage{$id}">Print this page</label></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">&nbsp;<label for="printSelection{$id}" style="color: gray;">Print selected</label></td>
+	</tr>
+</table>
+
+{BEGIN print_details}
+<div class="rnr-printdetails">
+<input type=checkbox id="printDetailsToggler{$id}">&nbsp;<label for="printDetailsToggler{$id}">Print details</label>
+	<div class="rnr-printdetailstables"  id="printdetailstables{$id}" style="display:none;">
+{BEGIN print_details_cat_personal}
+	
+		<div class="rnr-printdetialstable"><input type=checkbox value="cat_personal" id="printDetailscat_personal{$id}" checked>&nbsp;<label for="printDetailscat_personal{$id}">Cat Personal</label></div>
+{END print_details_cat_personal}
+	</div>
+</div>
+{END print_details}
+
+<div class="rnr-printdetails">
+<label for="printPerPage{$id}">
+	Resultados por página:
+</label>&nbsp;<input type=number id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">&nbsp;
+</div>
+
+<div class="rnr-printbutton">
+<a href=# class="rnr-button button" id="print_friendly_button{$id}" >Print</a>
+</div>
+</div>
+</div>
+{END print_friendly}
+</div>
+
+
+
+</div>
+{END container_hmenu}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN menu_block}
+{$menu main}
+{END menu_block}
+
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criterio:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>todos</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>alguno</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Añadir campo</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="datos_add.php" class="rnr-button" {$addlink_attrs}>Añadir nuevo</a>
+	{END add_link}
+
+		{BEGIN inlineadd_link}
+		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>Añadir nuevo</a>
+	{END inlineadd_link}
+
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}
+<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">Con los seleccionados...</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+		{BEGIN editselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$editselectedlink_attrs} {$editselectedlink_span}>Editar</a>
+</li>
+	{END editselected_link}
+
+		{BEGIN deleteselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Borrar</a>
+</li>
+	{END deleteselected_link}
+
+		{BEGIN exportselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$exportselectedlink_attrs} {$exportselectedlink_span}>Exportar</a>
+</li>
+	{END exportselected_link}
+
+</ul>
+</span>
+{END widhtSelected}
+		{BEGIN saveall_link}
+		<a href="#" class="rnr-button" {$savealllink_attrs} {$savealllink_span}>Guardar todo</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<a href="#" class="rnr-button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancelar</a>
+	{END cancelall_link}
+</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}
+<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+{BEGIN moreButtons}
+<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">Más...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+
+{BEGIN asearch_link}
+<li>
+	<a href="datos_search.php" class="rnr-button link" {$advsearchlink_attrs}>Búsqueda avanzada</a>
+</li>
+{END asearch_link}
+
+{BEGIN export_link}
+<li>
+	<a target="_blank" href="datos_export.php" class="rnr-button link" {$exportlink_attrs}>Exportar resultados</a>
+</li>
+{END export_link}
+
+{BEGIN import_link}
+<li>
+	<a href="datos_import.php?{$crosstable_attrs}" class="rnr-button link" {$importlink_attrs}>Importar</a>
+</li>
+{END import_link}
+</ul>
+{END moreButtons}
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}
+<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Detalles encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> / <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Resultados por página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		{BEGIN datos_dtable_column}
+									<th >&nbsp;</th>
+									{END datos_dtable_column}
+																										{BEGIN id_datos_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$id_datos_class}">
+									{BEGIN id_datos_fieldheader}
+																				<span {$id_datos_orderlinkattrs}>
+											{$label datos id_datos}
+										</span>
+									{END id_datos_fieldheader}
+									</th>
+									{END id_datos_fieldheadercolumn}
+
+																	{BEGIN serie_pc_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$serie_pc_class}">
+									{BEGIN serie_pc_fieldheader}
+																				<span {$serie_pc_orderlinkattrs}>
+											{$label datos serie_pc}
+										</span>
+									{END serie_pc_fieldheader}
+									</th>
+									{END serie_pc_fieldheadercolumn}
+
+																	{BEGIN id_adsc_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$id_adsc_class}">
+									{BEGIN id_adsc_fieldheader}
+																				<span {$id_adsc_orderlinkattrs}>
+											{$label datos id_adsc}
+										</span>
+									{END id_adsc_fieldheader}
+									</th>
+									{END id_adsc_fieldheadercolumn}
+
+																	{BEGIN servicio_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$servicio_class}">
+									{BEGIN servicio_fieldheader}
+																				<span {$servicio_orderlinkattrs}>
+											{$label datos servicio}
+										</span>
+									{END servicio_fieldheader}
+									</th>
+									{END servicio_fieldheadercolumn}
+
+																	{BEGIN cuenta_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$cuenta_class}">
+									{BEGIN cuenta_fieldheader}
+																				<span {$cuenta_orderlinkattrs}>
+											{$label datos cuenta}
+										</span>
+									{END cuenta_fieldheader}
+									</th>
+									{END cuenta_fieldheadercolumn}
+
+																	{BEGIN marca_pc_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$marca_pc_class}">
+									{BEGIN marca_pc_fieldheader}
+																				<span {$marca_pc_orderlinkattrs}>
+											{$label datos marca_pc}
+										</span>
+									{END marca_pc_fieldheader}
+									</th>
+									{END marca_pc_fieldheadercolumn}
+
+																	{BEGIN modelo_pc_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$modelo_pc_class}">
+									{BEGIN modelo_pc_fieldheader}
+																				<span {$modelo_pc_orderlinkattrs}>
+											{$label datos modelo_pc}
+										</span>
+									{END modelo_pc_fieldheader}
+									</th>
+									{END modelo_pc_fieldheadercolumn}
+
+																	{BEGIN nombre_pc_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$nombre_pc_class}">
+									{BEGIN nombre_pc_fieldheader}
+																				<span {$nombre_pc_orderlinkattrs}>
+											{$label datos nombre_pc}
+										</span>
+									{END nombre_pc_fieldheader}
+									</th>
+									{END nombre_pc_fieldheadercolumn}
+
+																	{BEGIN ip_pc_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$ip_pc_class}">
+									{BEGIN ip_pc_fieldheader}
+																				<span {$ip_pc_orderlinkattrs}>
+											{$label datos ip_pc}
+										</span>
+									{END ip_pc_fieldheader}
+									</th>
+									{END ip_pc_fieldheadercolumn}
+
+																	{BEGIN mat_aplicador_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$mat_aplicador_class}">
+									{BEGIN mat_aplicador_fieldheader}
+																				<span {$mat_aplicador_orderlinkattrs}>
+											{$label datos mat_aplicador}
+										</span>
+									{END mat_aplicador_fieldheader}
+									</th>
+									{END mat_aplicador_fieldheadercolumn}
+
+																	{BEGIN mat_encuestado_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$mat_encuestado_class}">
+									{BEGIN mat_encuestado_fieldheader}
+																				<span {$mat_encuestado_orderlinkattrs}>
+											{$label datos mat_encuestado}
+										</span>
+									{END mat_encuestado_fieldheader}
+									</th>
+									{END mat_encuestado_fieldheadercolumn}
+
+																	{BEGIN nombre_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$nombre_class}">
+									{BEGIN nombre_fieldheader}
+																				<span {$nombre_orderlinkattrs}>
+											{$label datos nombre}
+										</span>
+									{END nombre_fieldheader}
+									</th>
+									{END nombre_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+																		{BEGIN edit_column}
+									{BEGIN edit_link}
+																			<a class="rnr-button-img" {$editlink_attrs} data-icon="edit" title="Editar"></a>
+									{END edit_link}
+									{END edit_column}
+
+																		{BEGIN inlineedit_column}
+									{BEGIN inlineedit_link}
+																			<a class="rnr-button-img" {$inlineeditlink_attrs} data-icon="inlineedit" title="Editar"></a>
+									{END inlineedit_link}
+									{END inlineedit_column}
+
+									
+																		{BEGIN view_column}
+									{BEGIN view_link}
+																			<a class="rnr-button-img" {$viewlink_attrs} data-icon="view" title="Ver"></a>
+									{END view_link}
+									{END view_column}
+									</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+																		{BEGIN datos_dtable_column}
+									<td class="rnr-nowrap" {$rowstyle} {$recordattrs}>
+
+																		{BEGIN dtables_link}
+									<a {$dtables_link_attrs} data-icon=details title="Show details"></a>
+									{END dtables_link}
+									
+									</td>
+									{END datos_dtable_column}
+
+										{BEGIN id_datos_fieldcolumn}
+	<td class="{$id_datos_class}" {$id_datos_style} {$recordattrs}>
+		{$id_datos_value}
+	</td>
+{END id_datos_fieldcolumn}
+
+	{BEGIN serie_pc_fieldcolumn}
+	<td class="{$serie_pc_class}" {$serie_pc_style} {$recordattrs}>
+		{$serie_pc_value}
+	</td>
+{END serie_pc_fieldcolumn}
+
+	{BEGIN id_adsc_fieldcolumn}
+	<td class="{$id_adsc_class}" {$id_adsc_style} {$recordattrs}>
+		{$id_adsc_value}
+	</td>
+{END id_adsc_fieldcolumn}
+
+	{BEGIN servicio_fieldcolumn}
+	<td class="{$servicio_class}" {$servicio_style} {$recordattrs}>
+		{$servicio_value}
+	</td>
+{END servicio_fieldcolumn}
+
+	{BEGIN cuenta_fieldcolumn}
+	<td class="{$cuenta_class}" {$cuenta_style} {$recordattrs}>
+		{$cuenta_value}
+	</td>
+{END cuenta_fieldcolumn}
+
+	{BEGIN marca_pc_fieldcolumn}
+	<td class="{$marca_pc_class}" {$marca_pc_style} {$recordattrs}>
+		{$marca_pc_value}
+	</td>
+{END marca_pc_fieldcolumn}
+
+	{BEGIN modelo_pc_fieldcolumn}
+	<td class="{$modelo_pc_class}" {$modelo_pc_style} {$recordattrs}>
+		{$modelo_pc_value}
+	</td>
+{END modelo_pc_fieldcolumn}
+
+	{BEGIN nombre_pc_fieldcolumn}
+	<td class="{$nombre_pc_class}" {$nombre_pc_style} {$recordattrs}>
+		{$nombre_pc_value}
+	</td>
+{END nombre_pc_fieldcolumn}
+
+	{BEGIN ip_pc_fieldcolumn}
+	<td class="{$ip_pc_class}" {$ip_pc_style} {$recordattrs}>
+		{$ip_pc_value}
+	</td>
+{END ip_pc_fieldcolumn}
+
+	{BEGIN mat_aplicador_fieldcolumn}
+	<td class="{$mat_aplicador_class}" {$mat_aplicador_style} {$recordattrs}>
+		{$mat_aplicador_value}
+	</td>
+{END mat_aplicador_fieldcolumn}
+
+	{BEGIN mat_encuestado_fieldcolumn}
+	<td class="{$mat_encuestado_class}" {$mat_encuestado_style} {$recordattrs}>
+		{$mat_encuestado_value}
+	</td>
+{END mat_encuestado_fieldcolumn}
+
+	{BEGIN nombre_fieldcolumn}
+	<td class="{$nombre_class}" {$nombre_style} {$recordattrs}>
+		{$nombre_value}
+	</td>
+{END nombre_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination_bottom}
+<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}
+<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Detalles encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> / <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Resultados por página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination_bottom}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

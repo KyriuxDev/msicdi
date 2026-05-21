@@ -1,0 +1,64 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}">	<h1>{$pagetitlelabel datos masterprint}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-masterprintfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$id_datos_class}">{$label datos id_datos}</th>
+			<th class="{$serie_pc_class}">{$label datos serie_pc}</th>
+			<th class="{$id_adsc_class}">{$label datos id_adsc}</th>
+			<th class="{$servicio_class}">{$label datos servicio}</th>
+			<th class="{$cuenta_class}">{$label datos cuenta}</th>
+			<th class="{$marca_pc_class}">{$label datos marca_pc}</th>
+			<th class="{$modelo_pc_class}">{$label datos modelo_pc}</th>
+			<th class="{$nombre_pc_class}">{$label datos nombre_pc}</th>
+			<th class="{$ip_pc_class}">{$label datos ip_pc}</th>
+			<th class="{$mat_aplicador_class}">{$label datos mat_aplicador}</th>
+			<th class="{$mat_encuestado_class}">{$label datos mat_encuestado}</th>
+			<th class="{$nombre_class}">{$label datos nombre}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$id_datos_class}">{$id_datos_mastervalue}</td>
+			<td class="{$serie_pc_class}">{$serie_pc_mastervalue}</td>
+			<td class="{$id_adsc_class}">{$id_adsc_mastervalue}</td>
+			<td class="{$servicio_class}">{$servicio_mastervalue}</td>
+			<td class="{$cuenta_class}">{$cuenta_mastervalue}</td>
+			<td class="{$marca_pc_class}">{$marca_pc_mastervalue}</td>
+			<td class="{$modelo_pc_class}">{$modelo_pc_mastervalue}</td>
+			<td class="{$nombre_pc_class}">{$nombre_pc_mastervalue}</td>
+			<td class="{$ip_pc_class}">{$ip_pc_mastervalue}</td>
+			<td class="{$mat_aplicador_class}">{$mat_aplicador_mastervalue}</td>
+			<td class="{$mat_encuestado_class}">{$mat_encuestado_mastervalue}</td>
+			<td class="{$nombre_class}">{$nombre_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+
+{END container_mastergrid}
+
+</div>

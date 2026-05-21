@@ -1,0 +1,275 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button button" {$pdflink_attrs}>Vista PDF</a>
+{END pdflink_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfoprint {$brickclass_masterinfoprint}">{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel reportesaio print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN num_fieldheadercolumn}
+<th class="runner-cc {$num_class}" {$num_style}>
+	{BEGIN num_fieldheader}
+	<b>{$label reportesaio num}</b>
+	{END num_fieldheader}
+</th>
+{END num_fieldheadercolumn}
+	{BEGIN marca_fieldheadercolumn}
+<th class="runner-cc {$marca_class}" {$marca_style}>
+	{BEGIN marca_fieldheader}
+	<b>{$label reportesaio marca}</b>
+	{END marca_fieldheader}
+</th>
+{END marca_fieldheadercolumn}
+	{BEGIN serie_fieldheadercolumn}
+<th class="runner-cc {$serie_class}" {$serie_style}>
+	{BEGIN serie_fieldheader}
+	<b>{$label reportesaio serie}</b>
+	{END serie_fieldheader}
+</th>
+{END serie_fieldheadercolumn}
+	{BEGIN unidad_fieldheadercolumn}
+<th class="runner-cc {$unidad_class}" {$unidad_style}>
+	{BEGIN unidad_fieldheader}
+	<b>{$label reportesaio unidad}</b>
+	{END unidad_fieldheader}
+</th>
+{END unidad_fieldheadercolumn}
+	{BEGIN area_fieldheadercolumn}
+<th class="runner-cc {$area_class}" {$area_style}>
+	{BEGIN area_fieldheader}
+	<b>{$label reportesaio area}</b>
+	{END area_fieldheader}
+</th>
+{END area_fieldheadercolumn}
+	{BEGIN falla_fieldheadercolumn}
+<th class="runner-cc {$falla_class}" {$falla_style}>
+	{BEGIN falla_fieldheader}
+	<b>{$label reportesaio falla}</b>
+	{END falla_fieldheader}
+</th>
+{END falla_fieldheadercolumn}
+	{BEGIN fecha_fieldheadercolumn}
+<th class="runner-cc {$fecha_class}" {$fecha_style}>
+	{BEGIN fecha_fieldheader}
+	<b>{$label reportesaio fecha}</b>
+	{END fecha_fieldheader}
+</th>
+{END fecha_fieldheadercolumn}
+	{BEGIN usuario_fieldheadercolumn}
+<th class="runner-cc {$usuario_class}" {$usuario_style}>
+	{BEGIN usuario_fieldheader}
+	<b>{$label reportesaio usuario}</b>
+	{END usuario_fieldheader}
+</th>
+{END usuario_fieldheadercolumn}
+	{BEGIN ip_fieldheadercolumn}
+<th class="runner-cc {$ip_class}" {$ip_style}>
+	{BEGIN ip_fieldheader}
+	<b>{$label reportesaio ip}</b>
+	{END ip_fieldheader}
+</th>
+{END ip_fieldheadercolumn}
+	{BEGIN cuenta_fieldheadercolumn}
+<th class="runner-cc {$cuenta_class}" {$cuenta_style}>
+	{BEGIN cuenta_fieldheader}
+	<b>{$label reportesaio cuenta}</b>
+	{END cuenta_fieldheader}
+</th>
+{END cuenta_fieldheadercolumn}
+	{BEGIN evidencia_fieldheadercolumn}
+<th class="runner-cc {$evidencia_class}" {$evidencia_style}>
+	{BEGIN evidencia_fieldheader}
+	<b>{$label reportesaio evidencia}</b>
+	{END evidencia_fieldheader}
+</th>
+{END evidencia_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN num_fieldcolumn}
+<td  class="runner-cc {$num_class}" {$num_style} {$recordattrs}>
+	{$num_value}
+</td>
+{END num_fieldcolumn}
+	{BEGIN marca_fieldcolumn}
+<td  class="runner-cc {$marca_class}" {$marca_style} {$recordattrs}>
+	{$marca_value}
+</td>
+{END marca_fieldcolumn}
+	{BEGIN serie_fieldcolumn}
+<td  class="runner-cc {$serie_class}" {$serie_style} {$recordattrs}>
+	{$serie_value}
+</td>
+{END serie_fieldcolumn}
+	{BEGIN unidad_fieldcolumn}
+<td  class="runner-cc {$unidad_class}" {$unidad_style} {$recordattrs}>
+	{$unidad_value}
+</td>
+{END unidad_fieldcolumn}
+	{BEGIN area_fieldcolumn}
+<td  class="runner-cc {$area_class}" {$area_style} {$recordattrs}>
+	{$area_value}
+</td>
+{END area_fieldcolumn}
+	{BEGIN falla_fieldcolumn}
+<td  class="runner-cc {$falla_class}" {$falla_style} {$recordattrs}>
+	{$falla_value}
+</td>
+{END falla_fieldcolumn}
+	{BEGIN fecha_fieldcolumn}
+<td  class="runner-cc {$fecha_class}" {$fecha_style} {$recordattrs}>
+	{$fecha_value}
+</td>
+{END fecha_fieldcolumn}
+	{BEGIN usuario_fieldcolumn}
+<td  class="runner-cc {$usuario_class}" {$usuario_style} {$recordattrs}>
+	{$usuario_value}
+</td>
+{END usuario_fieldcolumn}
+	{BEGIN ip_fieldcolumn}
+<td  class="runner-cc {$ip_class}" {$ip_style} {$recordattrs}>
+	{$ip_value}
+</td>
+{END ip_fieldcolumn}
+	{BEGIN cuenta_fieldcolumn}
+<td  class="runner-cc {$cuenta_class}" {$cuenta_style} {$recordattrs}>
+	{$cuenta_value}
+</td>
+{END cuenta_fieldcolumn}
+	{BEGIN evidencia_fieldcolumn}
+<td  class="runner-cc {$evidencia_class}" {$evidencia_style} {$recordattrs}>
+	{$evidencia_value}
+</td>
+{END evidencia_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

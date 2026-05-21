@@ -1,0 +1,217 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_pdf} rnr-wrapper rnr-cbw-pdf">
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-cv rnr-c-pdf">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewpdf {$brickclass_viewpdf}">{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button" {$pdflink_attrs}>Vista PDF</a>
+{END pdflink_block}
+
+</div>
+
+
+</div>
+{END container_pdf}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel win10 view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields2 {$brickclass_viewfields2}"><table class="fieldGrid fieldGrid2">
+
+<tr>
+<td>
+	{BEGIN id_fieldblock}
+<div data-fieldname="id" class="rnr-field style1 {$fielddispclass_id}">
+  <span class="rnr-label">{$label win10 id}:</span>
+  <span class="rnr-control style3">{$id_value}</span>
+</div>
+{END id_fieldblock}
+	{BEGIN entidad_fieldblock}
+<div data-fieldname="entidad" class="rnr-field style1 {$fielddispclass_entidad}">
+  <span class="rnr-label">{$label win10 entidad}:</span>
+  <span class="rnr-control style3">{$entidad_value}</span>
+</div>
+{END entidad_fieldblock}
+	{BEGIN delegacion_fieldblock}
+<div data-fieldname="delegacion" class="rnr-field style1 {$fielddispclass_delegacion}">
+  <span class="rnr-label">{$label win10 delegacion}:</span>
+  <span class="rnr-control style3">{$delegacion_value}</span>
+</div>
+{END delegacion_fieldblock}
+	{BEGIN unidad_fieldblock}
+<div data-fieldname="unidad" class="rnr-field style1 {$fielddispclass_unidad}">
+  <span class="rnr-label">{$label win10 unidad}:</span>
+  <span class="rnr-control style3">{$unidad_value}</span>
+</div>
+{END unidad_fieldblock}
+	{BEGIN area_fieldblock}
+<div data-fieldname="area" class="rnr-field style1 {$fielddispclass_area}">
+  <span class="rnr-label">{$label win10 area}:</span>
+  <span class="rnr-control style3">{$area_value}</span>
+</div>
+{END area_fieldblock}
+	{BEGIN hostn7_fieldblock}
+<div data-fieldname="hostn7" class="rnr-field style1 {$fielddispclass_hostn7}">
+  <span class="rnr-label">{$label win10 hostn7}:</span>
+  <span class="rnr-control style3">{$hostn7_value}</span>
+</div>
+{END hostn7_fieldblock}
+	{BEGIN hostn10_fieldblock}
+<div data-fieldname="hostn10" class="rnr-field style1 {$fielddispclass_hostn10}">
+  <span class="rnr-label">{$label win10 hostn10}:</span>
+  <span class="rnr-control style3">{$hostn10_value}</span>
+</div>
+{END hostn10_fieldblock}
+</td>
+<td>
+	{BEGIN version_fieldblock}
+<div data-fieldname="version" class="rnr-field style1 {$fielddispclass_version}">
+  <span class="rnr-label">{$label win10 version}:</span>
+  <span class="rnr-control style3">{$version_value}</span>
+</div>
+{END version_fieldblock}
+	{BEGIN nomusuario_fieldblock}
+<div data-fieldname="nomusuario" class="rnr-field style1 {$fielddispclass_nomusuario}">
+  <span class="rnr-label">{$label win10 nomusuario}:</span>
+  <span class="rnr-control style3">{$nomusuario_value}</span>
+</div>
+{END nomusuario_fieldblock}
+	{BEGIN cuenta_fieldblock}
+<div data-fieldname="cuenta" class="rnr-field style1 {$fielddispclass_cuenta}">
+  <span class="rnr-label">{$label win10 cuenta}:</span>
+  <span class="rnr-control style3">{$cuenta_value}</span>
+</div>
+{END cuenta_fieldblock}
+	{BEGIN fecha_fieldblock}
+<div data-fieldname="fecha" class="rnr-field style1 {$fielddispclass_fecha}">
+  <span class="rnr-label">{$label win10 fecha}:</span>
+  <span class="rnr-control style3">{$fecha_value}</span>
+</div>
+{END fecha_fieldblock}
+	{BEGIN archivo_fieldblock}
+<div data-fieldname="archivo" class="rnr-field style1 {$fielddispclass_archivo}">
+  <span class="rnr-label">{$label win10 archivo}:</span>
+  <span class="rnr-control style3">{$archivo_value}</span>
+</div>
+{END archivo_fieldblock}
+	{BEGIN segmentored_fieldblock}
+<div data-fieldname="segmentored" class="rnr-field style1 {$fielddispclass_segmentored}">
+  <span class="rnr-label">{$label win10 segmentored}:</span>
+  <span class="rnr-control style3">{$segmentored_value}</span>
+</div>
+{END segmentored_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Cerrar ventana</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Editar</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

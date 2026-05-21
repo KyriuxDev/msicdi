@@ -1,0 +1,229 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button button" {$pdflink_attrs}>Vista PDF</a>
+{END pdflink_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel cat_criterios print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> / <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_criterio_fieldheadercolumn}
+<th class="runner-cc {$id_criterio_class}" {$id_criterio_style}>
+	{BEGIN id_criterio_fieldheader}
+	<b>{$label cat_criterios id_criterio}</b>
+	{END id_criterio_fieldheader}
+</th>
+{END id_criterio_fieldheadercolumn}
+	{BEGIN criterio_fieldheadercolumn}
+<th class="runner-cc {$criterio_class}" {$criterio_style}>
+	{BEGIN criterio_fieldheader}
+	<b>{$label cat_criterios criterio}</b>
+	{END criterio_fieldheader}
+</th>
+{END criterio_fieldheadercolumn}
+	{BEGIN asiact_fieldheadercolumn}
+<th class="runner-cc {$asiact_class}" {$asiact_style}>
+	{BEGIN asiact_fieldheader}
+	<b>{$label cat_criterios asiact}</b>
+	{END asiact_fieldheader}
+</th>
+{END asiact_fieldheadercolumn}
+	{BEGIN inciso_fieldheadercolumn}
+<th class="runner-cc {$inciso_class}" {$inciso_style}>
+	{BEGIN inciso_fieldheader}
+	<b>{$label cat_criterios inciso}</b>
+	{END inciso_fieldheader}
+</th>
+{END inciso_fieldheadercolumn}
+	{BEGIN texto_fieldheadercolumn}
+<th class="runner-cc {$texto_class}" {$texto_style}>
+	{BEGIN texto_fieldheader}
+	<b>{$label cat_criterios texto}</b>
+	{END texto_fieldheader}
+</th>
+{END texto_fieldheadercolumn}
+	{BEGIN actividad_fieldheadercolumn}
+<th class="runner-cc {$actividad_class}" {$actividad_style}>
+	{BEGIN actividad_fieldheader}
+	<b>{$label cat_criterios actividad}</b>
+	{END actividad_fieldheader}
+</th>
+{END actividad_fieldheadercolumn}
+	{BEGIN grupo_fieldheadercolumn}
+<th class="runner-cc {$grupo_class}" {$grupo_style}>
+	{BEGIN grupo_fieldheader}
+	<b>{$label cat_criterios grupo}</b>
+	{END grupo_fieldheader}
+</th>
+{END grupo_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_criterio_fieldcolumn}
+<td  class="runner-cc {$id_criterio_class}" {$id_criterio_style} {$recordattrs}>
+	{$id_criterio_value}
+</td>
+{END id_criterio_fieldcolumn}
+	{BEGIN criterio_fieldcolumn}
+<td  class="runner-cc {$criterio_class}" {$criterio_style} {$recordattrs}>
+	{$criterio_value}
+</td>
+{END criterio_fieldcolumn}
+	{BEGIN asiact_fieldcolumn}
+<td  class="runner-cc {$asiact_class}" {$asiact_style} {$recordattrs}>
+	{$asiact_value}
+</td>
+{END asiact_fieldcolumn}
+	{BEGIN inciso_fieldcolumn}
+<td  class="runner-cc {$inciso_class}" {$inciso_style} {$recordattrs}>
+	{$inciso_value}
+</td>
+{END inciso_fieldcolumn}
+	{BEGIN texto_fieldcolumn}
+<td  class="runner-cc {$texto_class}" {$texto_style} {$recordattrs}>
+	{$texto_value}
+</td>
+{END texto_fieldcolumn}
+	{BEGIN actividad_fieldcolumn}
+<td  class="runner-cc {$actividad_class}" {$actividad_style} {$recordattrs}>
+	{$actividad_value}
+</td>
+{END actividad_fieldcolumn}
+	{BEGIN grupo_fieldcolumn}
+<td  class="runner-cc {$grupo_class}" {$grupo_style} {$recordattrs}>
+	{$grupo_value}
+</td>
+{END grupo_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+		{BEGIN details_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN details_record}
+		<td  class="rnr-edge" colspan="8">
+			{BEGIN details_table}
+			{$details}
+			{END details_table}
+		</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+		{END details_record}
+	</tr>
+	{END details_row}
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

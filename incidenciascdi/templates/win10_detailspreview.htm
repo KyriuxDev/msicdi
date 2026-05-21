@@ -1,0 +1,79 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div class="rnr-c rnr-cv rnr-c-dcount">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewheader {$brickclass_detailspreviewheader}">	<h1>{$pagetitlelabel win10 detailspreview}</h1>
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdetailsfount {$brickclass_detailspreviewdetailsfount}">Detalles encontrados: <strong>{$row_count}.</strong>
+</div>
+
+
+{BEGIN display_first}
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdispfirst {$brickclass_detailspreviewdispfirst}">Mostrando primero: <strong>{$display_count}</strong>.
+</div>{END display_first}
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="rnr-c rnr-cont rnr-c--detailspreviewgrid rnr-b-detailspreviewgrid rnr-gridtable">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$id_class}">{$label win10 id}</th>
+			<th class="{$entidad_class}">{$label win10 entidad}</th>
+			<th class="{$delegacion_class}">{$label win10 delegacion}</th>
+			<th class="{$unidad_class}">{$label win10 unidad}</th>
+			<th class="{$area_class}">{$label win10 area}</th>
+			<th class="{$hostn7_class}">{$label win10 hostn7}</th>
+			<th class="{$hostn10_class}">{$label win10 hostn10}</th>
+			<th class="{$version_class}">{$label win10 version}</th>
+			<th class="{$nomusuario_class}">{$label win10 nomusuario}</th>
+			<th class="{$cuenta_class}">{$label win10 cuenta}</th>
+			<th class="{$segmentored_class}">{$label win10 segmentored}</th>
+			<th class="{$fecha_class}">{$label win10 fecha}</th>
+			<th class="{$archivo_class}">{$label win10 archivo}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr class="rnr-row style1">
+			<td class="{$id_class}">{$id_value}</td>
+			<td class="{$entidad_class}">{$entidad_value}</td>
+			<td class="{$delegacion_class}">{$delegacion_value}</td>
+			<td class="{$unidad_class}">{$unidad_value}</td>
+			<td class="{$area_class}">{$area_value}</td>
+			<td class="{$hostn7_class}">{$hostn7_value}</td>
+			<td class="{$hostn10_class}">{$hostn10_value}</td>
+			<td class="{$version_class}">{$version_value}</td>
+			<td class="{$nomusuario_class}">{$nomusuario_value}</td>
+			<td class="{$cuenta_class}">{$cuenta_value}</td>
+			<td class="{$segmentored_class}">{$segmentored_value}</td>
+			<td class="{$fecha_class}">{$fecha_value}</td>
+			<td class="{$archivo_class}">{$archivo_value}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

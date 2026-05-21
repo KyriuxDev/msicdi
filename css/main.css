@@ -1,0 +1,1089 @@
+#logger-referencia,#logger-so,
+    #logger-cc,#logger-stat,#logger-reg,#logger-ui,
+    #logger-fondo,#logger-hw,#logger-matr
+    {
+        width              : 100%;
+        margin-top         : 20px;
+        border-right-width : 1px;
+        border-right-style : solid;
+        border-right-color : blue;
+        border-left-width  : 1px;
+        border-left-style  : solid;
+        border-left-color  : blue;
+    }
+
+    #divExcel{
+        width: 100%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: green;
+    }
+    tg{
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .checkboxs{display:none}
+    .switch{
+        width: 62px;
+        height: 32px;
+        background: #E5E5E5;
+        z-index: 0;
+        margin: 0;
+        padding: 0;
+        appearance: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        border-radius:16px; //IE 11
+        -moz-border-radius:16px; //Mozilla
+        -webkit-border-radius:16px; //Chrome and Safari
+    }  
+    .switch:before {
+        content: ' ';
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        width: 60px;
+        height: 30px;
+        background: #FFFFFF;
+        z-index: 1;
+        border-radius:16px; //IE 11
+        -moz-border-radius:16px; //Mozilla
+        -webkit-border-radius:16px; //Chrome and Safari
+    }
+    .switch:after {
+        content: ' ';
+        height: 29px;
+        width: 29px;
+        border-radius: 28px;
+        z-index: 2;
+        background: #FFFFFF;
+        position: absolute;
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
+        top: 1px;
+        left: 1px;
+        -webkit-box-shadow: 0 2px 5px #999999;
+        box-shadow: 0 2px 5px #999999;
+    }
+    .switchOn , .switchOn:before{
+        background: #4cd964 !important;
+    }
+    .switchOn:after{
+        left: 39px !important;
+    }
+
+    #divControles{
+        border-radius: 20px;
+        width: 100%;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 2px;
+    }
+    #agregarGrupo{
+        color: #ffffff;
+        width: 160px;
+        background-color:#28bfcc;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #28bfcc;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #eliminarGrupo{
+        color: #ffffff;
+        width: 160px;
+        background-color: #cc6161;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #cc6161;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #realizar{
+        color: #ffffff;
+        width: 160px;
+        background-color: #25cc54;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #25cc54;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #limpiar{
+        color: #ffffff;
+        width: 145px;
+        background-color: red;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: red;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #descargar{
+        color: #ffffff;
+        width: 145px;
+        background-color: #ffdc81;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #ffdc81;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #gruposHolder{
+        width: 100%;;
+    }
+    #campos ul li{
+        width: 100%;
+        padding: 0px;
+        list-style: none;
+        margin-top: 5px;
+    }
+
+    .grupos{
+        width: 100%;
+        min-height: 100px;
+        margin-bottom      : 20px;
+        margin-left        : 5%;
+        padding-top        : 5px;
+        padding-bottom     : 5px;   
+        padding-left       : 20px;
+        text-align         : left;
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : green;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background-color   : rgb(227,255,210);
+    }
+
+    #campos{
+        width: 90%;
+        margin-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        margin-bottom      : 20px;
+        text-align         : center;
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : blue;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background-color   : rgb(196, 247, 255);
+    }
+    .notification-list-item{
+        height: 22px !important;
+    }
+
+    body
+    {
+        font               : normal 10pt Arial,Helvetica,sans-serif;
+        margin             : 0 !important;
+        padding            : 0;
+        background         : #fff;
+    }
+    #divImgModal{
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+    #divImgModal img{
+        width: 100%; 
+        height: 100%; 
+        vertical-align: bottom; 
+    }
+
+    #vistaPrevia{
+        -pie-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #428BCC;
+        max-height: 150px;
+        height: 150px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+    #vistaPrevia img{
+        width: 100%; 
+        height: 100%; 
+        vertical-align: bottom; 
+    }
+
+    .info-popover {
+        width: 98%;
+        border-style: solid;
+        border-color: #D5D5D5;
+        -pie-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        border-width: 2px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    .arrow {
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: 12px;
+    }
+
+    body.modal-open {
+      margin-left: 0 !important;
+      padding-left: 8px !important;
+    }
+
+    .div-normal{
+        display: block;
+    }
+    #div-btn{
+        text-align: right;
+    } 
+    #divUsuarioValido{
+        text-align: center;
+        margin-top: 10px;
+        border-color: red;
+        border-width: 2px;
+        border-style: solid;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        -pie-border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 20px 20px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #divAvanzados{
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        width: 95%;
+        border-style: dashed;
+        border-width: 1px;
+        border-color: #5BC967;
+        margin-bottom: 20px;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #footerConst{
+        position: absolute;
+        bottom: 10px;
+        right: 120px;
+    }  
+
+    #footerConst2{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #div-nota{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+   .div-temporal{
+     display: none;
+   } 
+
+
+    #categoria
+    {
+        margin-top         : 20px;
+        padding-top        : 20px;
+        padding-bottom     : 20px;
+        padding-bottom     : 20px;
+        padding-left       : 20px;
+        border-width       : 1px;
+        border-width       : 100%;
+        border-style       : solid;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #categorias
+    {
+    width              : 90%;
+    margin-top         : 20px;
+    margin-bottom      : 20px;
+    margin-left        : 5%;
+    }
+
+    .form-own
+    {
+        width              : 98%;
+        height             : 30px;
+        margin-left        : 1%;
+        -pie-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+    #categoria
+    {
+        margin-top         : 20px;
+        padding-top        : 20px;
+        padding-bottom     : 20px;
+        padding-bottom     : 20px;
+        padding-left       : 20px;
+
+        border-width       : 1px;
+        border-width       : 100%;
+        border-style       : solid;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #categorias
+    {
+        width              : 90%;
+        margin-top         : 20px;
+        margin-bottom      : 20px;
+        margin-left        : 5%;
+    }
+
+    .form-own
+    {
+        width              : 98%;
+        height             : 30px;
+        margin-left        : 1%;
+        -pie-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #usuario-editar
+    {
+        width              : 90%;
+        margin-top         : 20px;
+        margin-left        : 5%;
+        padding-top        : 20px;
+        padding-right      : 20px;
+        padding-bottom     : 20px;
+        padding-left       : 20px;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : green;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #logger-usuarios
+    {
+    overflow-y         : scroll;
+
+    width              : 86%;
+    height             : 300px;
+    margin-top         : 20px;
+    margin-bottom      : 20px;
+    margin-left        : 7%;
+
+    border-right-width : 1px;
+    border-right-style : solid;
+    border-right-color : blue;
+    border-left-width  : 1px;
+    border-left-style  : solid;
+    border-left-color  : blue;
+    }
+
+    #logger-adscripcion,
+    #logger-categoria,
+    {
+    width              : 80%;
+    margin-top         : 20px;
+    margin-left        : 10%;
+    border-right-width : 1px;
+    border-right-style : solid;
+    border-right-color : blue;
+    border-left-width  : 1px;
+    border-left-style  : solid;
+    border-left-color  : blue;
+    }
+
+    #usuario-form
+    {
+        width              : 60%;
+        margin-top         : 20px;
+        margin-left        : 20%;
+        padding-top        : 20px;
+        padding-right      : 20px;
+        padding-bottom     : 20px;
+        padding-left       : 20px;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : green;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #submenu
+    {
+        width              : 90%;
+        margin-bottom      : 10px;
+        margin-left        : 5%;
+        padding-top        : 5px;
+        padding-bottom     : 5px;
+        padding-left       : 20px;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : green;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background-color   : rgb(103,156,34);
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    table
+    {
+    table-layout       : fixed;
+
+    word-wrap          : break-word;
+    }
+
+    .smaller
+    {
+    font-size          : 11px;
+
+    margin-bottom      : 1px;
+    padding-bottom     : 8px;
+
+    color              : gray;
+    }
+
+    #div-historial
+    {
+        width              : 94%;
+        margin-top         : 30px;
+        margin-left        : 3%;
+        padding-top        : 5px;
+        padding-bottom     : 10px;
+        padding-left       : 30px;
+
+        border-width       : 1px;
+        border-style       : dashed;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #div-notas
+    {
+        width              : 96%;
+        margin-bottom      : 5px;
+        margin-left        : 0;
+        padding-top        : 5px;
+        padding-bottom     : 5px;
+        padding-left       : 10px;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : orange;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background-color   : rgb(255,250,239);
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #control-rastreo
+    {
+        width              : 94%;
+        margin-left        : 3%;
+        padding-top        : 20px;
+        padding-right      : 20px;
+        padding-bottom     : 20px;
+        padding-left       : 20px;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : white;
+        border-top-style   : none;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #div-filtro
+    {
+        width              : 90%;
+        margin-bottom      : 40px;
+        margin-left        : 5%;
+        padding-top        : 10px;
+        padding-bottom     : 10px;
+        padding-left       : 20px;
+
+        text-align         : left;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : green;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #div-derecha
+    {
+    width              : 90%;
+    margin-bottom      : 10px;
+    margin-left        : 5%;
+
+    text-align         : right;
+    }
+
+    #div-centrado
+    {
+    width              : 100%;
+    margin-top         : 10px;
+
+    text-align         : center;
+    }
+
+    #reportes-admin
+    {
+        width              : 90%;
+        margin-top         : 20px;
+        margin-bottom      : 20px;
+        margin-left        : 5%;
+        padding-top        : 20px;
+        padding-bottom     : 20px;
+
+        text-align         : center;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : rgb(77,146,191);
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #rastreo-interior
+    {
+        width              : 80%;
+        margin-top         : 40px;
+        margin-bottom      : 10px;
+        margin-left        : 10%;
+        padding-bottom     : 20px;
+    }
+
+    #rastreo-box
+    {
+        width              : 60%;
+        margin-top         : 50px;
+        margin-bottom      : 50px;
+        margin-left        : 20%;
+        padding-top        : 10px;
+        padding-left       : 20px;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : black;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+    #mensaje-correcto
+    {
+        width              : 90%;
+        height             : 30px;
+        margin-bottom      : 20px;
+        margin-left        : 5%;
+        padding-top        : 5px;
+        padding-left       : 20px;
+
+        text-align         : center;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : green;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background-color   : rgb(227,255,210);
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #mensaje-error
+    {
+        width              : 90%;
+        height             : 30px;
+        margin-bottom      : 20px;
+        margin-left        : 5%;
+        padding-top        : 5px;
+        padding-left       : 20px;
+
+        text-align         : center;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : red;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background-color   : rgb(254,237,231);
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #respuesta-uno
+    {
+    width              : 96%;
+    margin-top         : 10px;
+    margin-bottom      : 10px;
+    margin-left        : 2%;
+    }
+
+    #respuesta-dos
+    {
+        width              : 95%;
+        margin-top         : 10px;
+        margin-bottom      : 10px;
+        margin-left        : 4%;
+        padding-top        : 10px;
+        padding-bottom     : 10px;
+        padding-left       : 20px;
+
+        border-width       : 1px;
+        border-style       : solid;
+        border-color       : green;
+        -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background-color   : rgb(242,255,249);
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #rastreo-respuesta
+    {
+    width              : 94%;
+    margin-top         : 15px;
+    margin-left        : 3%;
+    padding-bottom     : 20px;
+
+    text-align         : center;
+
+    border-width       : 1px;
+    border-style       : solid;
+    border-color       : black;
+    -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #rastreo-mensajes
+    {
+    width              : 94%;
+    margin-top         : 15px;
+    margin-left        : 3%;
+
+    border-width       : 1px;
+    border-style       : solid;
+    border-color       : black;
+    -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #rastreo-principal
+    {
+    width              : 94%;
+    margin-left        : 3%;
+    padding-left       : 30px;
+
+    border-width       : 1px;
+    border-style       : solid;
+    border-color       : black;
+    -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #div-fallido
+    {
+    width              : 90%;
+    height             : 150px;
+    margin-top         : 5%;
+    margin-bottom      : 5%;
+    margin-left        : 5%;
+
+    border-width       : 1px;
+    border-style       : solid;
+    border-color       : red;
+    -pie-border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 20px 20px;
+    background-color   : rgb(241,159,156);
+    behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    #tabla-suceso
+    {
+    margin-top         : 30px;
+    margin-left        : 50px;
+    }
+
+    #div-exitoso
+    {
+    width              : 90%;
+    height             : 180px;
+    margin-top         : 5%;
+    margin-bottom      : 5%;
+    margin-left        : 5%;
+
+    border-width       : 1px;
+    border-style       : solid;
+    border-color       : green;
+    -pie-border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 20px 20px;
+    background-color   : rgb(227,265,210);
+    behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+
+    textarea
+    {
+    resize             : none;
+
+    border-width       : 2px;
+    border-style       : solid;
+    -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+    #matriculaCorrecto
+    {
+    text-align         : center;
+    color              : green;
+    }
+    #errorSerie
+    {
+    text-align         : center;
+    color              : red;
+    }
+    #infoBySerie, #infoMatricula
+    {
+    width              : 96%;
+    margin-top         : -8px;
+    margin-left        : 2%;
+
+    -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+    background-color   : #d3d3d3;
+    behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+    #form-block
+    {
+    width              : 96%;
+    margin-top         : 30px;
+    margin-bottom      : 30px;
+    margin-left        : 2%;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #d3d3d3;
+    }
+
+    #div-form-inside
+    {
+    width              : 90%;
+    margin-top         : 10px;
+    margin-left        : 5%;
+    }
+
+    #div-form
+    {
+    width              : 90%;
+    margin-left        : 5%;
+
+    border-width       : 1px;
+    border-style       : solid;
+    border-color       : rgb(100,162,200);
+    -pie-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+    #td-reporte
+    {
+    width              : 100%;
+    height             : 100px;
+
+    border-width       : 1px;
+    border-style       : solid;
+    border-color       : rgb(100,162,200);
+    -pie-border-radius: 15px 15px 15px 15px;
+        border-radius: 15px 15px 15px 15px;
+        behavior: url('/msicdi/js/PIE/PIE.php');
+    }
+    #tabla-reporte
+    {
+    width              : 100%;
+    margin-top         : 50px;
+    margin-bottom      : 100px;
+    margin-left        : 0;
+
+    border-spacing     : 20px;
+    border-collapse    : separate;
+
+    text-align         : center;
+    }
+    .centrado
+    {
+    text-align         : center;
+    }
+    #filtro
+    {
+    width              : 80%;
+    margin-left        : 10%;
+    }
+    .acceso
+    {
+    width              : 50%;
+    margin-left        : 25%;
+
+    text-align         : center;
+    }
+    .container
+    {
+    width              : 85% !important;
+    }
+    #Leyenda
+    {
+    margin-top         : -65px;
+    margin-left        : 10% !important;
+    }
+
+    #content
+    {
+    padding            : 20px;
+    }
+
+    #sidebar
+    {
+    padding            : 20px 20px 20px 0;
+    }
+
+    #footer
+    {
+    font-size          : .8em;
+
+    margin             : 10px 20px;
+    padding            : 10px;
+
+    text-align         : center;
+
+    border-top         : 1px solid #c9e0ed;
+    }
+
+    #logo
+    {
+    font-size          : 200%;
+
+    padding            : 20px 0;
+    }
+
+    #mainmenu
+    {
+    background         : white url(bg.gif) repeat-x left top;
+    }
+
+    #mainmenu ul
+    {
+    margin             : 0;
+    padding            : 6px 20px 5px 20px;
+    }
+
+    #mainmenu ul li
+    {
+    display            : inline;
+    }
+
+    #mainmenu ul li a
+    {
+    font-size          : 12px;
+    font-weight        : bold;
+
+    padding            : 5px 8px;
+
+    text-decoration    : none;
+
+    color              : #fff;
+    background-color   : transparent;
+    }
+
+    #mainmenu ul li a  :hover,
+    #mainmenu ul li.active a
+    {
+    text-decoration    : none;
+
+    color              : #6399cd;
+    background-color   : #eff4fa;
+    }
+
+    div.flash-error,
+    div.flash-notice,
+    div.flash-success
+    {
+    margin-bottom      : 1em;
+    padding            : .8em;
+
+    border             : 2px solid #ddd;
+    }
+
+    div.flash-error
+    {
+    color              : #8a1f11;
+    border-color       : #fbc2c4;
+    background         : #fbe3e4;
+    }
+
+    div.flash-notice
+    {
+    color              : #514721;
+    border-color       : #ffd324;
+    background         : #fff6bf;
+    }
+
+    div.flash-success
+    {
+    color              : #264409;
+    border-color       : #c6d880;
+    background         : #e6efc2;
+    }
+
+    div.flash-error a
+    {
+    color              : #8a1f11;
+    }
+
+    div.flash-notice a
+    {
+    color              : #514721;
+    }
+
+    div.flash-success a
+    {
+    color              : #264409;
+    }
+
+    div.form .rememberMe label
+    {
+    display            : inline;
+    }
+
+    div.view
+    {
+    margin             : 10px 0;
+    padding            : 10px;
+
+    border             : 1px solid #c9e0ed;
+    }
+
+    div.breadcrumbs
+    {
+    font-size          : .9em;
+
+    padding            : 5px 20px;
+    }
+
+    div.breadcrumbs span
+    {
+    font-weight        : bold;
+    }
+
+    div.search-form
+    {
+    margin             : 10px 0;
+    padding            : 10px;
+
+    background         : #eee;
+    }
+
+
+
+    .portlet-decoration
+    {
+    padding            : 3px 8px;
+
+    border-left        : 5px solid #6faccf;
+    background         : #b7d6e7;
+    }
+
+    .portlet-title
+    {
+    font-size          : 12px;
+    font-weight        : bold;
+
+    margin             : 0;
+    padding            : 0;
+
+    color              : #298dcd;
+    }
+
+    .portlet-content
+    {
+    font-size          : .9em;
+
+    margin             : 0 0 15px 0;
+    padding            : 5px 8px;
+
+    background         : #effdff;
+    }
+
+    .portlet-content ul
+    {
+    margin             : 0;
+    padding            : 0;
+
+    list-style-position: outside;
+    list-style-type    : none;
+    list-style-image   : none;
+    }
+
+    .portlet-content li
+    {
+    padding            : 2px 0 4px 0;
+    }
+
+    .operations
+    {
+    margin             : 0;
+    padding            : 0;
+
+    list-style-type    : none;
+    }
+
+    .operations li
+    {
+    padding-bottom     : 2px;
+    }
+
+    .operations li a
+    {
+    font               : bold 12px Arial;
+    line-height        : 15px;
+
+    display            : block;
+
+    padding            : 2px 0 2px 8px;
+
+    text-decoration    : none;
+
+    color              : #0066a4;
+    }
+
+    .operations li a   :visited
+    {
+    color              : #0066a4;
+    }
+
+    .operations li a   :hover
+    {
+    background         : #80cfff;
+    }

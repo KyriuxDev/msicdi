@@ -1,0 +1,338 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel win10 search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criterio:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas las condiciones</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Ninguna condición</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NO</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id}">
+	{BEGIN id_fieldblock}		
+	<td>
+		{$label win10 id}
+	</td>
+	<td>
+		<input type="checkbox" {$id_notbox}>
+	</td>
+	<td>
+		{$searchtype_id}
+	</td>
+	<td>
+		{$id_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_editcontrol1}&nbsp;
+	</td>
+{END id_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_entidad}">
+	{BEGIN entidad_fieldblock}		
+	<td>
+		{$label win10 entidad}
+	</td>
+	<td>
+		<input type="checkbox" {$entidad_notbox}>
+	</td>
+	<td>
+		{$searchtype_entidad}
+	</td>
+	<td>
+		{$entidad_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$entidad_editcontrol1}&nbsp;
+	</td>
+{END entidad_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_delegacion}">
+	{BEGIN delegacion_fieldblock}		
+	<td>
+		{$label win10 delegacion}
+	</td>
+	<td>
+		<input type="checkbox" {$delegacion_notbox}>
+	</td>
+	<td>
+		{$searchtype_delegacion}
+	</td>
+	<td>
+		{$delegacion_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$delegacion_editcontrol1}&nbsp;
+	</td>
+{END delegacion_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_unidad}">
+	{BEGIN unidad_fieldblock}		
+	<td>
+		{$label win10 unidad}
+	</td>
+	<td>
+		<input type="checkbox" {$unidad_notbox}>
+	</td>
+	<td>
+		{$searchtype_unidad}
+	</td>
+	<td>
+		{$unidad_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$unidad_editcontrol1}&nbsp;
+	</td>
+{END unidad_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_area}">
+	{BEGIN area_fieldblock}		
+	<td>
+		{$label win10 area}
+	</td>
+	<td>
+		<input type="checkbox" {$area_notbox}>
+	</td>
+	<td>
+		{$searchtype_area}
+	</td>
+	<td>
+		{$area_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$area_editcontrol1}&nbsp;
+	</td>
+{END area_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_hostn7}">
+	{BEGIN hostn7_fieldblock}		
+	<td>
+		{$label win10 hostn7}
+	</td>
+	<td>
+		<input type="checkbox" {$hostn7_notbox}>
+	</td>
+	<td>
+		{$searchtype_hostn7}
+	</td>
+	<td>
+		{$hostn7_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$hostn7_editcontrol1}&nbsp;
+	</td>
+{END hostn7_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_hostn10}">
+	{BEGIN hostn10_fieldblock}		
+	<td>
+		{$label win10 hostn10}
+	</td>
+	<td>
+		<input type="checkbox" {$hostn10_notbox}>
+	</td>
+	<td>
+		{$searchtype_hostn10}
+	</td>
+	<td>
+		{$hostn10_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$hostn10_editcontrol1}&nbsp;
+	</td>
+{END hostn10_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_version}">
+	{BEGIN version_fieldblock}		
+	<td>
+		{$label win10 version}
+	</td>
+	<td>
+		<input type="checkbox" {$version_notbox}>
+	</td>
+	<td>
+		{$searchtype_version}
+	</td>
+	<td>
+		{$version_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$version_editcontrol1}&nbsp;
+	</td>
+{END version_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nomusuario}">
+	{BEGIN nomusuario_fieldblock}		
+	<td>
+		{$label win10 nomusuario}
+	</td>
+	<td>
+		<input type="checkbox" {$nomusuario_notbox}>
+	</td>
+	<td>
+		{$searchtype_nomusuario}
+	</td>
+	<td>
+		{$nomusuario_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nomusuario_editcontrol1}&nbsp;
+	</td>
+{END nomusuario_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_cuenta}">
+	{BEGIN cuenta_fieldblock}		
+	<td>
+		{$label win10 cuenta}
+	</td>
+	<td>
+		<input type="checkbox" {$cuenta_notbox}>
+	</td>
+	<td>
+		{$searchtype_cuenta}
+	</td>
+	<td>
+		{$cuenta_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$cuenta_editcontrol1}&nbsp;
+	</td>
+{END cuenta_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_segmentored}">
+	{BEGIN segmentored_fieldblock}		
+	<td>
+		{$label win10 segmentored}
+	</td>
+	<td>
+		<input type="checkbox" {$segmentored_notbox}>
+	</td>
+	<td>
+		{$searchtype_segmentored}
+	</td>
+	<td>
+		{$segmentored_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$segmentored_editcontrol1}&nbsp;
+	</td>
+{END segmentored_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_fecha}">
+	{BEGIN fecha_fieldblock}		
+	<td>
+		{$label win10 fecha}
+	</td>
+	<td>
+		<input type="checkbox" {$fecha_notbox}>
+	</td>
+	<td>
+		{$searchtype_fecha}
+	</td>
+	<td>
+		{$fecha_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$fecha_editcontrol1}&nbsp;
+	</td>
+{END fecha_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_archivo}">
+	{BEGIN archivo_fieldblock}		
+	<td>
+		{$label win10 archivo}
+	</td>
+	<td>
+		<input type="checkbox" {$archivo_notbox}>
+	</td>
+	<td>
+		{$searchtype_archivo}
+	</td>
+	<td>
+		{$archivo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$archivo_editcontrol1}&nbsp;
+	</td>
+{END archivo_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reiniciar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

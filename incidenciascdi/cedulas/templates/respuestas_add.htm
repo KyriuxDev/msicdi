@@ -1,0 +1,140 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel respuestas add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN serie_pc_fieldblock}
+<div data-fieldname="serie_pc" class="rnr-field style1 {$fielddispclass_serie_pc}">
+  <span class="rnr-label">{BEGIN serie_pc_label}{$label respuestas serie_pc}{END serie_pc_label}</span>
+  <span class="rnr-control style3">{$serie_pc_editcontrol}</span>
+</div>
+{END serie_pc_fieldblock}
+	{BEGIN id_criterio_fieldblock}
+<div data-fieldname="id_criterio" class="rnr-field style1 {$fielddispclass_id_criterio}">
+  <span class="rnr-label">{BEGIN id_criterio_label}{$label respuestas id_criterio}{END id_criterio_label}</span>
+  <span class="rnr-control style3">{$id_criterio_editcontrol}</span>
+</div>
+{END id_criterio_fieldblock}
+	{BEGIN fecha_fieldblock}
+<div data-fieldname="fecha" class="rnr-field style1 {$fielddispclass_fecha}">
+  <span class="rnr-label">{BEGIN fecha_label}{$label respuestas fecha}{END fecha_label}</span>
+  <span class="rnr-control style3">{$fecha_editcontrol}</span>
+</div>
+{END fecha_fieldblock}
+</td>
+<td>
+	{BEGIN cumplimiento_fieldblock}
+<div data-fieldname="cumplimiento" class="rnr-field style1 {$fielddispclass_cumplimiento}">
+  <span class="rnr-label">{BEGIN cumplimiento_label}{$label respuestas cumplimiento}{END cumplimiento_label}</span>
+  <span class="rnr-control style3">{$cumplimiento_editcontrol}</span>
+</div>
+{END cumplimiento_fieldblock}
+	{BEGIN recomendacion_fieldblock}
+<div data-fieldname="recomendacion" class="rnr-field style1 {$fielddispclass_recomendacion}">
+  <span class="rnr-label">{BEGIN recomendacion_label}{$label respuestas recomendacion}{END recomendacion_label}</span>
+  <span class="rnr-control style3">{$recomendacion_editcontrol}</span>
+</div>
+{END recomendacion_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

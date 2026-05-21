@@ -1,0 +1,152 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel cat_criterios add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields2 {$brickclass_addfields2}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN id_criterio_fieldblock}
+<div data-fieldname="id_criterio" class="rnr-field style1 {$fielddispclass_id_criterio}">
+  <span class="rnr-label">{BEGIN id_criterio_label}{$label cat_criterios id_criterio}{END id_criterio_label}</span>
+  <span class="rnr-control style3">{$id_criterio_editcontrol}</span>
+</div>
+{END id_criterio_fieldblock}
+	{BEGIN criterio_fieldblock}
+<div data-fieldname="criterio" class="rnr-field style1 {$fielddispclass_criterio}">
+  <span class="rnr-label">{BEGIN criterio_label}{$label cat_criterios criterio}{END criterio_label}</span>
+  <span class="rnr-control style3">{$criterio_editcontrol}</span>
+</div>
+{END criterio_fieldblock}
+	{BEGIN asiact_fieldblock}
+<div data-fieldname="asiact" class="rnr-field style1 {$fielddispclass_asiact}">
+  <span class="rnr-label">{BEGIN asiact_label}{$label cat_criterios asiact}{END asiact_label}</span>
+  <span class="rnr-control style3">{$asiact_editcontrol}</span>
+</div>
+{END asiact_fieldblock}
+	{BEGIN inciso_fieldblock}
+<div data-fieldname="inciso" class="rnr-field style1 {$fielddispclass_inciso}">
+  <span class="rnr-label">{BEGIN inciso_label}{$label cat_criterios inciso}{END inciso_label}</span>
+  <span class="rnr-control style3">{$inciso_editcontrol}</span>
+</div>
+{END inciso_fieldblock}
+</td>
+<td>
+	{BEGIN texto_fieldblock}
+<div data-fieldname="texto" class="rnr-field style1 {$fielddispclass_texto}">
+  <span class="rnr-label">{BEGIN texto_label}{$label cat_criterios texto}{END texto_label}</span>
+  <span class="rnr-control style3">{$texto_editcontrol}</span>
+</div>
+{END texto_fieldblock}
+	{BEGIN actividad_fieldblock}
+<div data-fieldname="actividad" class="rnr-field style1 {$fielddispclass_actividad}">
+  <span class="rnr-label">{BEGIN actividad_label}{$label cat_criterios actividad}{END actividad_label}</span>
+  <span class="rnr-control style3">{$actividad_editcontrol}</span>
+</div>
+{END actividad_fieldblock}
+	{BEGIN grupo_fieldblock}
+<div data-fieldname="grupo" class="rnr-field style1 {$fielddispclass_grupo}">
+  <span class="rnr-label">{BEGIN grupo_label}{$label cat_criterios grupo}{END grupo_label}</span>
+  <span class="rnr-control style3">{$grupo_editcontrol}</span>
+</div>
+{END grupo_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

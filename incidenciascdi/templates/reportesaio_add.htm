@@ -1,0 +1,215 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel reportesaio add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN marca_fieldblock}
+<tr class="{$fielddispclass_marca}" data-fieldname="marca">
+	<td class="rnr-label">
+		{BEGIN marca_label}{$label reportesaio marca}{END marca_label}
+	</td>
+	<td class="rnr-control style3">
+		{$marca_editcontrol}&nbsp;
+	</td>
+</tr>
+{END marca_fieldblock}
+	{BEGIN serie_fieldblock}
+<tr class="{$fielddispclass_serie}" data-fieldname="serie">
+	<td class="rnr-label">
+		{BEGIN serie_label}{$label reportesaio serie}{END serie_label}
+	</td>
+	<td class="rnr-control style3">
+		{$serie_editcontrol}&nbsp;
+	</td>
+</tr>
+{END serie_fieldblock}
+	{BEGIN unidad_fieldblock}
+<tr class="{$fielddispclass_unidad}" data-fieldname="unidad">
+	<td class="rnr-label">
+		{BEGIN unidad_label}{$label reportesaio unidad}{END unidad_label}
+	</td>
+	<td class="rnr-control style3">
+		{$unidad_editcontrol}&nbsp;
+	</td>
+</tr>
+{END unidad_fieldblock}
+	{BEGIN area_fieldblock}
+<tr class="{$fielddispclass_area}" data-fieldname="area">
+	<td class="rnr-label">
+		{BEGIN area_label}{$label reportesaio area}{END area_label}
+	</td>
+	<td class="rnr-control style3">
+		{$area_editcontrol}&nbsp;
+	</td>
+</tr>
+{END area_fieldblock}
+	{BEGIN falla_fieldblock}
+<tr class="{$fielddispclass_falla}" data-fieldname="falla">
+	<td class="rnr-label">
+		{BEGIN falla_label}{$label reportesaio falla}{END falla_label}
+	</td>
+	<td class="rnr-control style3">
+		{$falla_editcontrol}&nbsp;
+	</td>
+</tr>
+{END falla_fieldblock}
+	{BEGIN fecha_fieldblock}
+<tr class="{$fielddispclass_fecha}" data-fieldname="fecha">
+	<td class="rnr-label">
+		{BEGIN fecha_label}{$label reportesaio fecha}{END fecha_label}
+	</td>
+	<td class="rnr-control style3">
+		{$fecha_editcontrol}&nbsp;
+	</td>
+</tr>
+{END fecha_fieldblock}
+	{BEGIN usuario_fieldblock}
+<tr class="{$fielddispclass_usuario}" data-fieldname="usuario">
+	<td class="rnr-label">
+		{BEGIN usuario_label}{$label reportesaio usuario}{END usuario_label}
+	</td>
+	<td class="rnr-control style3">
+		{$usuario_editcontrol}&nbsp;
+	</td>
+</tr>
+{END usuario_fieldblock}
+	{BEGIN ip_fieldblock}
+<tr class="{$fielddispclass_ip}" data-fieldname="ip">
+	<td class="rnr-label">
+		{BEGIN ip_label}{$label reportesaio ip}{END ip_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ip_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ip_fieldblock}
+	{BEGIN cuenta_fieldblock}
+<tr class="{$fielddispclass_cuenta}" data-fieldname="cuenta">
+	<td class="rnr-label">
+		{BEGIN cuenta_label}{$label reportesaio cuenta}{END cuenta_label}
+	</td>
+	<td class="rnr-control style3">
+		{$cuenta_editcontrol}&nbsp;
+	</td>
+</tr>
+{END cuenta_fieldblock}
+	{BEGIN evidencia_fieldblock}
+<tr class="{$fielddispclass_evidencia}" data-fieldname="evidencia">
+	<td class="rnr-label">
+		{BEGIN evidencia_label}{$label reportesaio evidencia}{END evidencia_label}
+	</td>
+	<td class="rnr-control style3">
+		{$evidencia_editcontrol}&nbsp;
+	</td>
+</tr>
+{END evidencia_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Guardar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reiniciar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancelar</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Volver a la lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Regresar al menú</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

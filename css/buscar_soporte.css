@@ -1,0 +1,50 @@
+/* ── Contenedor del buscador ── */
+.contenedor-buscador {
+    position: relative;
+    width: 90%;
+}
+
+/* ── Input de búsqueda ── */
+#buscarSoporte {
+    width: 100%;
+    padding-left: 4px;
+    margin-top:4px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+#buscarSoporte:focus {
+    border-color: #428bca;
+    outline: none;
+    box-shadow: 0 0 4px rgba(66, 139, 202, 0.4);
+}
+
+/* ── Lista desplegable ── */
+#listaSoporte {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 3px 3px;
+}
+
+/* ── Cada opción ── */
+.opcion-soporte {
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #000000;
+}
+
+.opcion-soporte-hover {
+    background-color: #1967d2;
+    color: #ffffff;
+}

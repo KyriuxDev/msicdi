@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ac90413-de2c-4b8c-b59d-8421a3c5e4bd" name="Default" comment="" />
+    <ignored path="msicdi.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="msicdi" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="APP.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/APP.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16193181" vertical-offset="24186" max-vertical-offset="30945">
+              <caret line="1620" column="35" selection-start-line="1620" selection-start-column="35" selection-end-line="1620" selection-end-column="35" />
+              <folding>
+                <marker date="1435535614000" expanded="false" signature="560:577" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="1048:1058" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="2255:2272" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="2735:2745" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="3861:3878" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="4349:4359" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="5445:5462" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="5917:5927" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="6995:7012" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="7477:7487" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="8586:8603" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="9071:9081" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="10159:10176" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="10632:10642" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="11708:11725" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="12198:12208" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="13330:13347" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="13844:13854" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="19733:19749" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="19847:19862" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="22545:22562" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="32026:32043" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="32513:32523" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="33488:33515" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="34417:34432" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="34755:34770" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="35229:35244" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="36373:36390" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="36878:36888" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="38805:38822" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="39325:39335" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="45690:45707" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="47214:47231" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="47835:47859" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="56722:56739" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="57204:57214" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="57916:57983" placeholder="..." />
+                <marker date="1435535614000" expanded="false" signature="58307:58334" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rep.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/admin/rep.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-294.375" vertical-offset="0" max-vertical-offset="9405">
+              <caret line="471" column="80" selection-start-line="471" selection-start-column="80" selection-end-line="471" selection-end-column="80" />
+              <folding>
+                <marker date="1435525833000" expanded="false" signature="20375:20424" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/protected/views/soporte/editar.php" />
+        <option value="$PROJECT_DIR$/protected/views/report/reporte.php" />
+        <option value="$PROJECT_DIR$/framework/web/auth/CWebUser.php" />
+        <option value="$PROJECT_DIR$/protected/models/AccesoForm.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/fallido.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/rastreoRespaldo.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/realizado.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/reporte.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/reporteManual.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/reportes.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SoporteController.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/backdoor.php" />
+        <option value="$PROJECT_DIR$/js/Noti/demo.js" />
+        <option value="$PROJECT_DIR$/js/Noti/ttw-notification-menu.js" />
+        <option value="$PROJECT_DIR$/protected/views/site/excel.php" />
+        <option value="$PROJECT_DIR$/protected/views/admin/datos.php" />
+        <option value="$PROJECT_DIR$/protected/views/admin/hw.php" />
+        <option value="$PROJECT_DIR$/protected/views/admin/editSO.php" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/administrar.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AdminController.php" />
+        <option value="$PROJECT_DIR$/protected/views/admin/rep.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/rastreo.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ReportController.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/rastrear.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/usuarios.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/categorias.php" />
+        <option value="$PROJECT_DIR$/protected/views/soporte/perfil.php" />
+        <option value="$PROJECT_DIR$/js/APP.js" />
+        <option value="$PROJECT_DIR$/protected/views/admin/inventario.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/acerca.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soporte" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msicdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/views/soporte" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.backdoor.php">
+    <configuration default="false" name="backdoor.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/msicdi/protected/views/soporte/backdoor.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.backdoor.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.backdoor.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ac90413-de2c-4b8c-b59d-8421a3c5e4bd" name="Default" comment="" />
+      <created>1431286963931</created>
+      <option name="number" value="Default" />
+      <updated>1431286963931</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31987077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/administrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3653" max-vertical-offset="4965">
+          <caret line="258" column="49" selection-start-line="258" selection-start-column="49" selection-end-line="258" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="1785">
+          <caret line="69" column="55" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/auth/CWebUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13065">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/editar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="960">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/rastreo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4050" max-vertical-offset="5580">
+          <caret line="279" column="28" selection-start-line="279" selection-start-column="28" selection-end-line="279" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SoporteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="12150">
+          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/APP.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10485" max-vertical-offset="23520">
+          <caret line="716" column="21" selection-start-line="716" selection-start-column="15" selection-end-line="716" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/report/homeReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/report/reporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6617647" vertical-offset="0" max-vertical-offset="680">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/auth/CUserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/auth/CWebUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45294118" vertical-offset="3877" max-vertical-offset="13065">
+          <caret line="286" column="42" selection-start-line="286" selection-start-column="42" selection-end-line="286" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/AccesoForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25" vertical-offset="805" max-vertical-offset="1485">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/adscripcion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/categoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/constancia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/editar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4632353" vertical-offset="0" max-vertical-offset="960">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/fallido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.022058824" vertical-offset="0" max-vertical-offset="680">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/noti.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2160">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/rastreoRespaldo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="5685">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/realizado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="570">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/reportes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1620">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/reporteManual.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11061947" vertical-offset="0" max-vertical-offset="2520">
+          <caret line="5" column="175" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pnotify.custom.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Noti/ttw-notification-menu.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Noti/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4900568" vertical-offset="0" max-vertical-offset="870">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/backdoor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8235294" vertical-offset="730" max-vertical-offset="1410">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Noti/ttw-notification-menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="8700">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/InicioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5955882" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/admin/hw.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1290">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/admin/editSO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28899083" vertical-offset="156" max-vertical-offset="870">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/admin/datos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5882354" vertical-offset="250" max-vertical-offset="2325">
+          <caret line="134" column="34" selection-start-line="134" selection-start-column="34" selection-end-line="134" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/excel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1764706" vertical-offset="0" max-vertical-offset="680">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/administrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="5055">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16425">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SoporteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73970586" vertical-offset="6457" max-vertical-offset="12570">
+          <caret line="474" column="46" selection-start-line="474" selection-start-column="46" selection-end-line="474" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.875" vertical-offset="655" max-vertical-offset="2385">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_inmuebles..." />
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_so..." />
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_cc..." />
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_status..." />
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_regimen..." />
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_ui..." />
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_fondo..." />
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_personal..." />
+            <marker date="1435511915000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..cdi_cat_hw..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/reporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4044118" vertical-offset="970" max-vertical-offset="1650">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/rastreo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40366971" vertical-offset="4446" max-vertical-offset="6465">
+          <caret line="314" column="5" selection-start-line="314" selection-start-column="5" selection-end-line="314" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#3;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ReportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8944954" vertical-offset="1695" max-vertical-offset="7890">
+          <caret line="162" column="47" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
+          <folding>
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="select * fro..cdi_reportes_manual..." />
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="select Adscr..cdi_cat_adscripcion..." />
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="select Categ..cdi_cat_categoria..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435534665000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8014706" vertical-offset="520" max-vertical-offset="1200">
+          <caret line="71" column="160" selection-start-line="71" selection-start-column="160" selection-end-line="71" selection-end-column="160" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/rastrear.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8014706" vertical-offset="25" max-vertical-offset="705">
+          <caret line="38" column="74" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/usuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2647059" vertical-offset="1005" max-vertical-offset="5175">
+          <caret line="79" column="139" selection-start-line="79" selection-start-column="139" selection-end-line="79" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/categorias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04411765" vertical-offset="1680" max-vertical-offset="2970">
+          <caret line="114" column="139" selection-start-line="114" selection-start-column="139" selection-end-line="114" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/soporte/perfil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5955882" vertical-offset="2055" max-vertical-offset="3480">
+          <caret line="164" column="79" selection-start-line="164" selection-start-column="79" selection-end-line="164" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/admin/inventario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="945">
+          <caret line="13" column="158" selection-start-line="13" selection-start-column="158" selection-end-line="13" selection-end-column="158" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/admin/rep.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-294.375" vertical-offset="0" max-vertical-offset="9405">
+          <caret line="471" column="80" selection-start-line="471" selection-start-column="80" selection-end-line="471" selection-end-column="80" />
+          <folding>
+            <marker date="1435525833000" expanded="false" signature="20375:20424" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32110092" vertical-offset="0" max-vertical-offset="12840">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select * fro..cdi_inventario..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select * fro..cdi_inventario..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_r..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..cdi_reportes_manual..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT NRast..cdi_reportes_manual..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT TIME_..cdi_reportes_manual..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_c..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_i..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_c..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_c..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select Clave..cdi_cat_inmuebles..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_c..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select id_hw..cdi_inventario..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_c..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select disti..cdi_inventario..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select conca..cdi_cat_personal..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select count..cdi_reportes_manual..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select count..cdi_reportes_manual..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="update cdi_u..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="update cdi_u..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="update cdi_r..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select Statu..cdi_cat_statusreporte..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="update cdi_c..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="update cdi_r..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="update cdi_u..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="update cdi_u..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select Email..cdi_usuarios..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select Nombr..cdi_cat_personal..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select count..cdi_usuarios..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT Clave..cdi_cat_adscripcion..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT Clave..cdi_cat_categoria..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT fecha..cdi_respuestas..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT nombr..cdi_reportes_manual..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT Matri..cdi_reportes_manual..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT conca..cdi_cat_personal..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select conca..cdi_cat_personal..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select statu..cdi_cat_status..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select disti..cdi_cat_hw..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select disti..cdi_cat_hw..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select clave..SUBSTRING..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="SELECT SUBST..cdi_cat_prei..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select descS..cdi_cat_so..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select max(i..cdi_cat_so..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_c..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select max(i..cdi_cat_hw..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="UPDATE cdi_c..." />
+            <marker date="1435536161000" expanded="true" signature="-1:-1" placeholder="select id_hw..cdi_cat_hw..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.257353" vertical-offset="225" max-vertical-offset="1815">
+          <caret line="72" column="70" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/acerca.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/APP.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16193181" vertical-offset="24186" max-vertical-offset="30945">
+          <caret line="1620" column="35" selection-start-line="1620" selection-start-column="35" selection-end-line="1620" selection-end-column="35" />
+          <folding>
+            <marker date="1435535614000" expanded="false" signature="560:577" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="1048:1058" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="2255:2272" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="2735:2745" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="3861:3878" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="4349:4359" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="5445:5462" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="5917:5927" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="6995:7012" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="7477:7487" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="8586:8603" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="9071:9081" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="10159:10176" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="10632:10642" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="11708:11725" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="12198:12208" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="13330:13347" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="13844:13854" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="19733:19749" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="19847:19862" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="22545:22562" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="32026:32043" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="32513:32523" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="33488:33515" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="34417:34432" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="34755:34770" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="35229:35244" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="36373:36390" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="36878:36888" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="38805:38822" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="39325:39335" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="45690:45707" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="47214:47231" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="47835:47859" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="56722:56739" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="57204:57214" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="57916:57983" placeholder="..." />
+            <marker date="1435535614000" expanded="false" signature="58307:58334" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
