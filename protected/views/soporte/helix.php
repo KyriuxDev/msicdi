@@ -324,82 +324,55 @@ if ($emailReportador !== 'sin@correo' && strpos($emailReportador, '@imss.gob.mx'
                 </div>
             </div>
 
-            <!-- CATEGORÍAS OPERACIONALES — colapsado por defecto -->
+            <!-- SERVICIO (reemplaza Cat. Operacional y Cat. Producto) -->
             <div class="panel panel-default">
-                <div class="panel-heading helix-panel-toggle collapsed"
-                     onclick="helixTogglePanel('helix_cat_ope_body', this)">
-                    <strong>Categorías Operacionales</strong>
-                    <span class="helix-flecha">&#9660;</span>
-                </div>
-                <div class="panel-body" id="helix_cat_ope_body" style="display:none;">
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <div class="form-group">
-                                <label>Cat. Operacional 1</label>
-                                <select class="form-control" id="helix_cat_ope_1">
-                                    <option value="APLICACIONES" selected>APLICACIONES</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="form-group">
-                                <label>Cat. Operacional 2</label>
-                                <select class="form-control" id="helix_cat_ope_2">
-                                    <option value="ATENCION DE APLICACIONES" selected>ATENCION DE APLICACIONES</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="form-group">
-                                <label>Cat. Operacional 3</label>
-                                <select class="form-control" id="helix_cat_ope_3">
-                                    <option value="CONFIGURAR" selected>CONFIGURAR</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CATEGORÍAS DE PRODUCTO — colapsado por defecto -->
-            <div class="panel panel-default">
-                <div class="panel-heading helix-panel-toggle collapsed"
-                     onclick="helixTogglePanel('helix_cat_prod_body', this)">
-                    <strong>Categorías de Producto</strong>
-                    <span class="helix-flecha">&#9660;</span>
-                </div>
-                <div class="panel-body" id="helix_cat_prod_body" style="display:none;">
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <div class="form-group">
-                                <label>Cat. Producto 1</label>
-                                <select class="form-control" id="helix_cat_prod_1">
-                                    <option value="HARDWARE" selected>HARDWARE</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="form-group">
-                                <label>Cat. Producto 2</label>
-                                <select class="form-control" id="helix_cat_prod_2">
-                                    <option value="COMPUTO PERSONAL" selected>COMPUTO PERSONAL</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="form-group">
-                                <label>Cat. Producto 3</label>
-                                <select class="form-control" id="helix_cat_prod_3">
-                                    <option value="PC" selected>PC</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                <div class="panel-heading"><strong>Servicio</strong></div>
+                <div class="panel-body">
                     <div class="form-group">
-                        <label>Nombre del Producto</label>
-                        <input readonly value type="text" class="form-control" id="helix_nombre_prod"
-                               maxlength="100" placeholder="Ej. Laptop, Impresora, etc. (opcional)"/>
+                        <label>Tipo de Servicio <span style="color:red">*</span></label>
+                        <select class="form-control" id="helix_servicio" onchange="helixActualizarCategorias();">
+                            <option value="">-- Seleccione el servicio --</option>
+                            <?php
+                            require_once Yii::getPathOfAlias('application') . '/helix/categorias.php';
+                            foreach (array_keys($helixCategoriasConfig) as $srv):
+                            ?>
+                                <option value="<?php echo htmlspecialchars($srv); ?>">
+                                    <?php echo htmlspecialchars($srv); ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                        <span class="help-block" style="font-size:11px;">
+                            Las categorías operacionales y de producto se asignan automáticamente según el servicio seleccionado.
+                        </span>
                     </div>
+
+                    <!-- Resumen de categorías seleccionadas (solo lectura, informativo)
+                    <div id="helix_cat_resumen" style="display:none;">
+                        <table class="table table-condensed" style="font-size:12px; margin-bottom:0;">
+                            <thead>
+                                <tr class="active">
+                                    <th>Campo</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Cat. Ope. 1</td><td id="resumen_cat_ope_1">—</td></tr>
+                                <tr><td>Cat. Ope. 2</td><td id="resumen_cat_ope_2">—</td></tr>
+                                <tr><td>Cat. Ope. 3</td><td id="resumen_cat_ope_3">—</td></tr>
+                                <tr><td>Cat. Prod. 1</td><td id="resumen_cat_prod_1">—</td></tr>
+                                <tr><td>Cat. Prod. 2</td><td id="resumen_cat_prod_2">—</td></tr>
+                                <tr><td>Cat. Prod. 3</td><td id="resumen_cat_prod_3">—</td></tr>
+                            </tbody>
+                        </table>
+                    </div> -->
+
+                    <!-- Campos ocultos — los lee helixRecopilarDatos() por id -->
+                    <input type="hidden" id="helix_cat_ope_1"  name="cat_ope_1"  value=""/>
+                    <input type="hidden" id="helix_cat_ope_2"  name="cat_ope_2"  value=""/>
+                    <input type="hidden" id="helix_cat_ope_3"  name="cat_ope_3"  value=""/>
+                    <input type="hidden" id="helix_cat_prod_1" name="cat_prod_1" value=""/>
+                    <input type="hidden" id="helix_cat_prod_2" name="cat_prod_2" value=""/>
+                    <input type="hidden" id="helix_cat_prod_3" name="cat_prod_3" value=""/>
                 </div>
             </div>
 

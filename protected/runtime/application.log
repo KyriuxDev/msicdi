@@ -585,3 +585,37 @@ Stack trace:
 REQUEST_URI=/msicdi/upload/4616.jpg
 HTTP_REFERER=http://11.1.21.5/msicdi/soporte/rastreo?codigo=R26-3415&&stat=1
 ---
+2026/05/26 23:07:24 [error] [php] Constants may only evaluate to scalar values (/opt/lampp/htdocs/msicdi/protected/helix/categorias.php:204)
+Stack trace:
+#0 /opt/lampp/htdocs/msicdi/protected/views/soporte/rastreo.php(405): include()
+#1 /opt/lampp/htdocs/msicdi/framework/web/CBaseController.php(126): require()
+#2 /opt/lampp/htdocs/msicdi/framework/web/CBaseController.php(95): SoporteController->renderInternal()
+#3 /opt/lampp/htdocs/msicdi/framework/web/CController.php(869): SoporteController->renderFile()
+#4 /opt/lampp/htdocs/msicdi/framework/web/CController.php(782): SoporteController->renderPartial()
+#5 /opt/lampp/htdocs/msicdi/protected/controllers/SoporteController.php(495): SoporteController->render()
+#6 /opt/lampp/htdocs/msicdi/framework/web/actions/CInlineAction.php(49): SoporteController->actionRastreo()
+#7 /opt/lampp/htdocs/msicdi/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /opt/lampp/htdocs/msicdi/framework/web/CController.php(286): SoporteController->runAction()
+#9 /opt/lampp/htdocs/msicdi/framework/web/CController.php(265): SoporteController->runActionWithFilters()
+#10 /opt/lampp/htdocs/msicdi/framework/web/CWebApplication.php(282): SoporteController->run()
+#11 /opt/lampp/htdocs/msicdi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /opt/lampp/htdocs/msicdi/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/msicdi/index.php(13): CWebApplication->run()
+REQUEST_URI=/msicdi/soporte/rastreo?codigo=R26-2833&&stat=1
+2026/05/26 23:07:44 [error] [php] Constants may only evaluate to scalar values (/opt/lampp/htdocs/msicdi/protected/helix/categorias.php:204)
+Stack trace:
+#0 /opt/lampp/htdocs/msicdi/protected/views/soporte/rastreo.php(405): include()
+#1 /opt/lampp/htdocs/msicdi/framework/web/CBaseController.php(126): require()
+#2 /opt/lampp/htdocs/msicdi/framework/web/CBaseController.php(95): SoporteController->renderInternal()
+#3 /opt/lampp/htdocs/msicdi/framework/web/CController.php(869): SoporteController->renderFile()
+#4 /opt/lampp/htdocs/msicdi/framework/web/CController.php(782): SoporteController->renderPartial()
+#5 /opt/lampp/htdocs/msicdi/protected/controllers/SoporteController.php(495): SoporteController->render()
+#6 /opt/lampp/htdocs/msicdi/framework/web/actions/CInlineAction.php(49): SoporteController->actionRastreo()
+#7 /opt/lampp/htdocs/msicdi/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /opt/lampp/htdocs/msicdi/framework/web/CController.php(286): SoporteController->runAction()
+#9 /opt/lampp/htdocs/msicdi/framework/web/CController.php(265): SoporteController->runActionWithFilters()
+#10 /opt/lampp/htdocs/msicdi/framework/web/CWebApplication.php(282): SoporteController->run()
+#11 /opt/lampp/htdocs/msicdi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /opt/lampp/htdocs/msicdi/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/msicdi/index.php(13): CWebApplication->run()
+REQUEST_URI=/msicdi/soporte/rastreo?codigo=R26-2833
