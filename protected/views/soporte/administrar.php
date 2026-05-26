@@ -164,9 +164,7 @@
 			<tr>
 				<td><a href="<?php echo Yii::app()->request->baseUrl; ?>/soporte/rastreo?codigo=<?php echo $model['NRastreo']; ?>"><?php echo $model['NRastreo']; ?></a></td>
 				<td><?php echo $model['nombreReportador'];?></td>
-
 				<td><?php echo $model['soporte']; ?></td>
-
 				<td><?php echo statusCase($model['status']); ?></td>
 				<td class="span6"><div class="fallaWrapper"><?php echo $model['descripcionFalla']; ?></div></td>
 			</tr>
@@ -183,7 +181,7 @@
 
 <div id="div-filtro">
 	<font size="4" color="green">>> Mostrar Reportes.</font></br></br>
-	<form role="form"   id="formFiltro" name="formFiltro" action="<?php echo Yii::app()->request->baseUrl; ?>/soporte/administrar.html" onsubmit="return limpiaFormFiltrado()" method="post">
+	<form role="form" id="formFiltro" name="formFiltro" action="<?php echo Yii::app()->request->baseUrl; ?>/soporte/administrar.html" onsubmit="return limpiaFormFiltrado()" method="post">
 		<table class="table">
 			<tbody>
 				<?php for ( $i = 0; $i < sizeof( $filtros ); $i+=5 ) {?>
@@ -220,13 +218,16 @@
 					<td style="vertical-align:middle !important">
 						Encargado :
 					</td>
-					<td colspan="3" >
+					<td colspan="3">
 						<select id="filtrSoporte" name="filtrSoporte" class="form-control">
 							<option value="nada">Seleccione un encargado ...</option>
 		    				<?php foreach ($soportes as $sop): ?>
-		    					<option value="<?php echo $sop['nom'];  ?>"><?php echo $sop['matr'].' - '.$sop['nom']; ?></option>
+		    					<option value="<?php echo $sop['nom']; ?>"
+		    						<?php if(isset($filtrSoporte) && $filtrSoporte === $sop['nom']) echo 'selected'; ?>>
+		    						<?php echo $sop['matr'].' - '.$sop['nom']; ?>
+		    					</option>
 		    				<?php endforeach ?>
-						</select>	
+						</select>
 					</td>
 				</tr>
 			</tbody>
@@ -319,7 +320,6 @@
 	        };
 	        notifications.createNotification(options);
 	    })
-	    //notifications.createNotification(options);
 	}
 
 	function obtenerTipo(tipo){
@@ -336,7 +336,6 @@
 
     $('#read-more').live('click', function (event) {
         $(this).parent().trunk8('revert').append(' <a id="read-less" href="#">Ver Menos</a>');
-
         return false;
     });
 
@@ -345,14 +344,3 @@
         return false;
     });
 </script>
-
-
-
-
-
-
-
-
-
-
-

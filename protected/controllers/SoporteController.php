@@ -302,9 +302,15 @@
 						$avanzada 	= false;
 						$chkTodo 	= true;
 						$crAva 		= "";
-						if (isset($_POST['filtrSoporte'])){
-							if( $_POST['filtrSoporte'] != 'nada') {
-								$clausulaTmp = "soporte = '{$_POST['filtrSoporte']}'";
+						$filtrSoporte = (isset($_POST['filtrSoporte']) && $_POST['filtrSoporte'] !== 'nada')
+							? $_POST['filtrSoporte']
+							: 'nada';
+						if ($filtrSoporte !== 'nada') {
+							if (!empty($clausulaTmp)) {
+								// Combinar el filtro de estado con el de encargado
+								$clausulaTmp = "({$clausulaTmp}) AND soporte = '{$filtrSoporte}'";
+							} else {
+								$clausulaTmp = "soporte = '{$filtrSoporte}'";
 							}
 						}
 						
@@ -332,7 +338,7 @@
 								$model['nombreReportador'] = $this->getNombreByMatricula($model['Matricula']);
 							}
 						}
-						$this->render("administrar",compact("soportes","paginas","chkTodos","chkTodo","crAva","avanzada","models","isAdmin","filtros","filtrCompact"));
+						$this->render("administrar",compact("soportes","paginas","chkTodos","chkTodo","crAva","avanzada","models","isAdmin","filtros","filtrCompact","filtrSoporte"));
 					}else
 						$this->redirect(Yii::app()->user->returnUrl);
 				}
