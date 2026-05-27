@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Etc/GMT+6');
 
 // uncomment the following to define a path alias
  Yii::setPathOfAlias('local','/Applications/MAMP/htdocs/IMMSACTUAL');

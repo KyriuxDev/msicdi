@@ -346,7 +346,7 @@ if ($emailReportador !== 'sin@correo' && strpos($emailReportador, '@imss.gob.mx'
                         </span>
                     </div>
 
-                    <!-- Resumen de categorías seleccionadas (solo lectura, informativo)
+                    Resumen de categorías seleccionadas (solo lectura, informativo)
                     <div id="helix_cat_resumen" style="display:none;">
                         <table class="table table-condensed" style="font-size:12px; margin-bottom:0;">
                             <thead>
@@ -364,7 +364,7 @@ if ($emailReportador !== 'sin@correo' && strpos($emailReportador, '@imss.gob.mx'
                                 <tr><td>Cat. Prod. 3</td><td id="resumen_cat_prod_3">—</td></tr>
                             </tbody>
                         </table>
-                    </div> -->
+                    </div>
 
                     <!-- Campos ocultos — los lee helixRecopilarDatos() por id -->
                     <input type="hidden" id="helix_cat_ope_1"  name="cat_ope_1"  value=""/>
