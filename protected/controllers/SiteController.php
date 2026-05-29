@@ -18,8 +18,32 @@ class SiteController extends Controller
   public function actionExcelReportes(){
     extract($_REQUEST);
     if(isset($cr)){
-      $query = "select * from cdi_reportes_manual where year(fechaReporte)='{$cr}'";
+      // LEFT JOIN con cdi_notas para obtener el código Helix (WO/INC)
+      // de cada reporte. Si no tiene nota de Helix queda NULL.
+      $query = "SELECT r.*,
+                    (SELECT n.mensaje
+                     FROM cdi_notas n
+                     WHERE n.Nrastreo = r.NRastreo
+                       AND n.mensaje LIKE '%Helix%'
+                     ORDER BY n.fecha DESC
+                     LIMIT 1) AS notaHelix
+                FROM cdi_reportes_manual r
+                WHERE year(r.fechaReporte) = '{$cr}'";
+
       $db = Yii::app()->db->createCommand($query)->queryAll();
+
+      // Extraer solo el código WO/INC de la nota para mostrarlo limpio
+      foreach ($db as &$row) {
+          $codigoHelix = '';
+          if (!empty($row['notaHelix'])) {
+              if (preg_match('/\b(WO|INC|IM)[0-9]+\b/i', $row['notaHelix'], $m)) {
+                  $codigoHelix = strtoupper($m[0]);
+              }
+          }
+          $row['codigoHelix'] = $codigoHelix;
+      }
+      unset($row);
+
       Yii::app()->request->sendFile('miarchivo.xls',
                                       $this->renderPartial('excelRep',compact('db'),true));
     }else
