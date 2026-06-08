@@ -15,6 +15,10 @@ class SiteController extends Controller
       $this->render('acerca');
   }
 
+  public function actionMGSI(){
+        $this->render('mgsi');
+  }
+
   public function actionExcelReportes(){
     extract($_REQUEST);
     if(isset($cr)){

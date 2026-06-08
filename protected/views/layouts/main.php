@@ -88,7 +88,7 @@
                 ),
                 array('label'=>'CCT 2013-2015', 'url'=>array('#'),'visible' => false),
 				array('label'=>'MAAGTIC-SI', 'url'=>array('#'),'visible' => false),
-				array('label'=>'Acerca de', 'url'=>array('/site/acerca')),
+				array('label'=>'MGSI', 'url'=>array('/site/mgsi')),
 				// array('label'=>'Desarrollador', 'items'=>array(array('label'=>'Consultar API','url'=>'/msicdi/api'),), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Entrar', 'url'=>array('/inicio/acceso'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Salir ('.Yii::app()->user->nombreCorto.')', 'url'=>array('/inicio/salir'), 'visible'=>!Yii::app()->user->isGuest,'htmlOptions' => array('id' => 'lolen','onclick' => 'onOverMenu();'))
