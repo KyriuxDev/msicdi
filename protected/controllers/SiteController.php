@@ -20,39 +20,40 @@ class SiteController extends Controller
   }
 
   public function actionExcelReportes(){
-    extract($_REQUEST);
-    if(isset($cr)){
-      // LEFT JOIN con cdi_notas para obtener el código Helix (WO/INC)
-      // de cada reporte. Si no tiene nota de Helix queda NULL.
-      $query = "SELECT r.*,
-                    (SELECT n.mensaje
-                     FROM cdi_notas n
-                     WHERE n.Nrastreo = r.NRastreo
-                       AND n.mensaje LIKE '%Helix%'
-                     ORDER BY n.fecha DESC
-                     LIMIT 1) AS notaHelix
-                FROM cdi_reportes_manual r
-                WHERE year(r.fechaReporte) = '{$cr}'";
+        extract($_REQUEST);
+        if(isset($cr)){
+            $cr_next = (int)$cr + 1;
 
-      $db = Yii::app()->db->createCommand($query)->queryAll();
+            $query = "SELECT r.*,
+                        n.mensaje AS notaHelix
+                    FROM cdi_reportes_manual r
+                    LEFT JOIN (
+                        SELECT Nrastreo, mensaje
+                        FROM cdi_notas
+                        WHERE mensaje LIKE 'Ticket registrado en Helix%'
+                    ) n ON n.Nrastreo = r.NRastreo
+                    WHERE r.fechaReporte >= '{$cr}-01-01'
+                    AND r.fechaReporte <  '{$cr_next}-01-01'";
 
-      // Extraer solo el código WO/INC de la nota para mostrarlo limpio
-      foreach ($db as &$row) {
-          $codigoHelix = '';
-          if (!empty($row['notaHelix'])) {
-              if (preg_match('/\b(WO|INC|IM)[0-9]+\b/i', $row['notaHelix'], $m)) {
-                  $codigoHelix = strtoupper($m[0]);
-              }
-          }
-          $row['codigoHelix'] = $codigoHelix;
-      }
-      unset($row);
+            $db = Yii::app()->db->createCommand($query)->queryAll();
 
-      Yii::app()->request->sendFile('miarchivo.xls',
-                                      $this->renderPartial('excelRep',compact('db'),true));
-    }else
-        $this->redirect(Yii::app()->request->baseUrl."/inicio");
-  }
+            foreach ($db as &$row) {
+                $codigoHelix = '';
+                if (!empty($row['notaHelix'])) {
+                    if (preg_match('/\b(WO|INC|IM)[0-9]+\b/i', $row['notaHelix'], $m)) {
+                        $codigoHelix = strtoupper($m[0]);
+                    }
+                }
+                $row['codigoHelix'] = $codigoHelix;
+            }
+            unset($row);
+
+            Yii::app()->request->sendFile('miarchivo.xls',
+                $this->renderPartial('excelRep', compact('db'), true));
+        } else {
+            $this->redirect(Yii::app()->request->baseUrl."/inicio");
+        }
+    }
 
   public function actionExcel(){
         extract($_REQUEST);
