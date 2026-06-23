@@ -83,6 +83,15 @@ return array(
 			'password' => 'admin',
 			'charset' => 'utf8',
 		),
+
+		'directorioDb' => array(
+			'class'            => 'CDbConnection',
+			'connectionString' => 'mysql:host=localhost;dbname=cdi_directorio',
+			'emulatePrepare'   => true,
+			'username'         => 'root',
+			'password'         => 'admin',
+			'charset'          => 'utf8',
+		),
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

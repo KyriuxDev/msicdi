@@ -188,9 +188,9 @@ class HelixController extends Controller
         Yii::app()->end();
     }
 
-    // ── actionBuscarLdap ──────────────────────────────────────────────────────
-    // Ahora recibe el correo completo (parámetro POST 'email') y
-    // busca en LDAP por el atributo 'mail', sin restricción de dominio.
+// ── actionBuscarLdap ──────────────────────────────────────────────────────
+    // Estrategia: 1) busca en cdi_directorio.trabajadores (local, sin DNS)
+    //             2) si no encuentra o falla, intenta LDAP como fallback
 
     public function actionBuscarLdap()
     {
@@ -203,19 +203,59 @@ class HelixController extends Controller
             Yii::app()->end();
         }
 
-        // Validación básica de formato de correo
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo CJSON::encode(array('ok' => false, 'encontrado' => false, 'msg' => 'Formato de correo no válido'));
             Yii::app()->end();
         }
 
-        require_once Yii::getPathOfAlias('application') . '/helix/config.php';
+        // ── 1. Directorio local ───────────────────────────────────────────────
+        $local = $this->buscarEnDirectorioLocal($email);
+        if ($local['encontrado']) {
+            echo CJSON::encode($local);
+            Yii::app()->end();
+        }
 
+        // ── 2. Fallback LDAP ──────────────────────────────────────────────────
+        require_once Yii::getPathOfAlias('application') . '/helix/config.php';
         echo CJSON::encode($this->buscarEnLdap($email));
         Yii::app()->end();
     }
 
-    // Busca por atributo 'mail' en lugar de 'samaccountname'
+    // ── buscarEnDirectorioLocal ───────────────────────────────────────────────
+    // Busca en cdi_directorio.trabajadores por correo exacto (activo = 1).
+
+    private function buscarEnDirectorioLocal($email)
+    {
+        try {
+            $res = Yii::app()->directorioDb->createCommand(
+                "SELECT nombre_completo, correo, sam_account
+                 FROM trabajadores
+                 WHERE correo = :email AND activo = 1
+                 LIMIT 1"
+            )->bindValue(':email', $email)->queryAll();
+
+            if (!empty($res)) {
+                return array(
+                    'ok'             => true,
+                    'encontrado'     => true,
+                    'displayname'    => $res[0]['nombre_completo'],
+                    'mail'           => $res[0]['correo'],
+                    'samaccountname' => $res[0]['sam_account'],
+                    'msg'            => 'Usuario encontrado en directorio local',
+                    'fuente'         => 'local',
+                );
+            }
+        } catch (Exception $e) {
+            error_log('buscarEnDirectorioLocal error: ' . $e->getMessage());
+            // Si falla la BD local, continúa al fallback LDAP
+        }
+
+        return array('ok' => true, 'encontrado' => false, 'msg' => 'No encontrado en directorio local');
+    }
+
+    // ── buscarEnLdap ──────────────────────────────────────────────────────────
+    // Busca por atributo 'mail' en el directorio activo.
+
     private function buscarEnLdap($email)
     {
         $conn = @ldap_connect(LDAP_HOST, LDAP_PORT);
@@ -228,7 +268,6 @@ class HelixController extends Controller
         if (!@ldap_bind($conn, LDAP_USER, LDAP_PASS))
             return array('ok' => false, 'encontrado' => false, 'msg' => 'Error al autenticar con el directorio');
 
-        // Filtro por atributo 'mail' con el correo completo
         $filtro    = '(mail=' . ldap_escape($email, '', LDAP_ESCAPE_FILTER) . ')';
         $atributos = array('displayname', 'mail', 'samaccountname', 'cn');
         $resultado = @ldap_search($conn, LDAP_BASE_DN, $filtro, $atributos);
@@ -249,6 +288,7 @@ class HelixController extends Controller
                 'mail'           => isset($entradas[0]['mail'][0])           ? $entradas[0]['mail'][0]           : '',
                 'samaccountname' => isset($entradas[0]['samaccountname'][0]) ? $entradas[0]['samaccountname'][0] : '',
                 'msg'            => 'Usuario encontrado en el directorio',
+                'fuente'         => 'ldap',
             );
         }
 
